@@ -2,7 +2,7 @@
 title: "How to Build This Website: Part 2"
 date: 1569109355
 lastmod:
-draft: false
+draft: true
 toc: true
 images: 
 tags: 
