@@ -364,6 +364,8 @@ Now we can begin hardening the security of the system, we'll start with the `/et
 
 First, we'll need to create an SSH ID if we don't already have one:
 
+> Note the two following commands should be executed on your **main machine, NOT the server**.
+
 ```bash
 ssh-keygen -t rsa -b 4096 -f $HOME/.ssh/id_rsa -N ''
 ```
