@@ -1,0 +1,71 @@
+markup:
+  defaultMarkdownHandler: blackfriday
+baseURL: 'https://www.mcmk.in'
+languageCode: en-gb
+defaultContentLanguage: en
+title: mcmk.in
+theme: hermit
+enableGitInfo: true
+pygmentsCodefences: true
+pygmentsStyle: monokai
+pygmentsUseClasses: true
+rssLimit: 10
+copyright: >-
+  This work is licensed under a Creative Commons Attribution-NonCommercial 4.0
+  International License.
+enableEmoji: true
+canonifyurls: true
+paginate: 10
+frontmatter:
+  date:
+    - ':git'
+    - lastmod
+    - date
+    - publishDate
+  publishDate:
+    - publishDate
+    - date
+  expiryDate: expiryDate
+author:
+  name: James McMeeking
+taxonomies:
+  tag: tags
+params:
+  dateform: 'Jan 2, 2006'
+  dateformShort: Jan 2
+  dateformNum: '2006-01-02'
+  dateformNumTime: '2006-01-02 15:04'
+  themeColor: '#222'
+  Description: 'Open source, automation, and tinkering.'
+  Author: James McMeeking
+  email: james@mcmk.in
+  ShowReadTime: true
+  contentTypeName: posts
+  footerCopyright: ' &#183; <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT</a>'
+  gitUrl: 'https://github.com/mcmeeking/www.mcmk.in/commits/master/'
+  justifyContent: false
+  relatedPosts: true
+  code_copy_button: true
+  customCSS:
+    - css/custom.css
+  social:
+    - name: linkedin
+      url: 'https://www.linkedin.com/in/jmcmeeking91/'
+    - name: github
+      url: 'https://github.com/mcmeeking/'
+    - name: email
+      url: 'mailto:james@mcmk.in'
+menu:
+  main:
+    - name: Posts
+      url: posts/
+      weight: 10
+related:
+  threshold: 80
+  includeNewer: false
+  toLower: false
+  indices:
+    - name: title
+      weight: 100
+    - name: tags
+      weight: 30
