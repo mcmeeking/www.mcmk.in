@@ -15,7 +15,7 @@
 		<meta name="description" content="{{ .Site.Params.description }}">
 	{{- end }}
 	{{- if .Params.tags }}
-		<meta name="keywords" content="{{ .Params.tags }}">
+		<meta name="keywords" content="{{ delimit .Params.tags ", " }}{{- if .Keywords }}, {{ delimit .Keywords ", " }}{{- end }}">
 	{{- end }}
 	{{- partial "structured-data.html" . }}
 	{{- partial "favicons.html" }}
