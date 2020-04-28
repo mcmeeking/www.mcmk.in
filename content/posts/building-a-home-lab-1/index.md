@@ -156,6 +156,7 @@ sudo apt install -y cockpit \
 curl -LO https://launchpad.net/ubuntu/+source/cockpit/215-1~ubuntu19.10.1/+build/18889196/+files/cockpit-docker_215-1~ubuntu19.10.1_all.deb && \
 sudo dpkg --install cockpit-docker_215-1~ubuntu19.10.1_all.deb && \
 sudo rm cockpit-docker_215-1~ubuntu19.10.1_all.deb && \
+sudo service cockpit start && \
 sudo systemctl enable --now {cockpit.socket,docker,libvirtd} && \
 sudo firewall-cmd --add-service=cockpit --permanent && \
 sudo systemctl status {cockpit.socket,docker,libvirtd} && \
