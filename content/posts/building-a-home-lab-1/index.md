@@ -143,21 +143,27 @@ We can now install and activate Cockpit and the modules which will be useful for
 
 ```bash
 sudo apt install -y cockpit \
-    cockpit-docker \
     cockpit-pcp \
     cockpit-storaged \
     cockpit-machines \
     cockpit-packagekit \
+    docker \
+    docker-compose \
     network-manager \
     firewalld \
     tuned \
     vim && \
+curl -LO https://launchpad.net/ubuntu/+source/cockpit/215-1~ubuntu19.10.1/+build/18889196/+files/cockpit-docker_215-1~ubuntu19.10.1_all.deb && \
+sudo dpkg --install cockpit-docker_215-1~ubuntu19.10.1_all.deb && \
+sudo rm cockpit-docker_215-1~ubuntu19.10.1_all.deb && \
 sudo systemctl enable --now {cockpit.socket,docker,libvirtd} && \
 sudo firewall-cmd --add-service=cockpit --permanent && \
 sudo systemctl status {cockpit.socket,docker,libvirtd} && \
 sleep 10 && \
 sudo shutdown -r now
 ```
+
+> Note: Since I originally wrote this, `cockpit-docker` has become unavailable on the default Focal Fossa repo. I'll write a post in the future to swap docker out for podman when `cockpit-podman` is ported to Ubuntu.
 
 You should now see something like this before the system goes down for a reboot:
 
