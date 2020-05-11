@@ -93,6 +93,14 @@ kbd {
     #mobile-menu {
         background-color: #c6c7cc;
     }
+    .lion {
+        background-image: url(/lion-light.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 8rem;
+        width: 14rem;
+    }
 }
 
 /* Dark mode */
@@ -114,5 +122,13 @@ kbd {
     }
     #mobile-menu {
         background-color: #232324;
+    }
+    .lion {
+        background-image: url(/lion-dark.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 8rem;
+        width: 14rem;
     }
 }
