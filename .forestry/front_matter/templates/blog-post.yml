@@ -1,0 +1,25 @@
+---
+label: Blog Post
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: description
+  label: description
+- type: text
+  name: ProjectLevel
+  label: ProjectLevel
+- type: text
+  name: ProjectTime
+  label: ProjectTime
+- type: boolean
+  name: toc
+  label: toc
+- type: file
+  name: featuredImg
+  label: featuredImg
+- type: list
+  name: tags
+  label: tags
