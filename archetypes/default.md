@@ -1,10 +1,21 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
+subtitle: ""
 date: {{ .Date }}
-lastmod: {{ .Lastmod }}
+author: ""
+authorLink: ""
+description: ""
+
 draft: true
 toc: false
-images: 
-tags: 
+
+ProjectLevel: ""
+ProjectTime: ""
+
+featuredImg: ""
+
+tags:
+
+categories:
 ---
 
