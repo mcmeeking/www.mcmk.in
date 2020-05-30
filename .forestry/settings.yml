@@ -15,17 +15,17 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  path: css
+  path: static/css
   label: CSS
   create: all
   match: "**/*"
-  new_doc_ext: ".css"
+  new_doc_ext: css
 - type: directory
-  path: js
+  path: static/js
   label: Javascript
   create: all
   match: "**/*"
-  new_doc_ext: ".js"
+  new_doc_ext: js
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
