@@ -18,14 +18,18 @@ sections:
   path: static/css
   label: CSS
   create: all
-  match: "*"
+  match: "**/*"
   new_doc_ext: css
+  templates:
+  - raw-file
 - type: directory
   path: static/js
   label: Javascript
   create: all
-  match: "*"
+  match: "**/*"
   new_doc_ext: js
+  templates:
+  - raw-file
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
