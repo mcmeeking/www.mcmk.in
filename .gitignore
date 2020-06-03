@@ -11,8 +11,9 @@ Thumbs.db
 *.log
 node_modules
 .sass-cache
-/packages
-/public
 Barebones
 yarn.lock
+/packages
+/public
 /build
+/resources

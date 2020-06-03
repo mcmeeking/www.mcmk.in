@@ -12,7 +12,7 @@ toc: true
 ProjectLevel: Beginner
 ProjectTime: 2 hour
 
-featuredImg: featured.jpg
+featuredImage: images/building-a-home-lab-1/featured.jpg
 
 tags:
   - ubuntu
@@ -22,7 +22,6 @@ tags:
 
 categories:
   - Projects
-  - Homelab
 ---
 
 ## Introduction
@@ -68,10 +67,12 @@ In the demo I'll be using the Server image as we'll be doing most of the managem
 The ISO image will then need to be burnt to either a USB or DVD so you can boot to it on your server. This can be done using:
 
 USB:
+
 - Windows - <https://rufus.ie>
 - MacOS/Linux - <https://www.balena.io/etcher>
 
 DVD:
+
 - Windows - File Explorer
 - Mac - Finder
 
@@ -87,21 +88,21 @@ If you're really struggling, you can google the make and model of your machine w
 
 You'll know when you've booted into the installer when you see a screen like this:
 
-![boot-screen](Ubuntu-boot.png)
+![boot-screen](images/building-a-home-lab-1/Ubuntu-boot.png)
 
 From here, select your language, and then "Install Ubuntu Server" which will begin booting into the installer, after which you'll be asked to confirm the language again and optionally download an updated installer (which I recommend doing), and finally will be brought to the locale selection screen where you select your keyboard layout:
 
-![locale-screen](Ubuntu-locale.png)
+![locale-screen](images/building-a-home-lab-1/Ubuntu-locale.png)
 
 Select the locale for your keyboard using the arrow and enter (or space) keys, and hit "Done". Next you'll be brought to the network setup screen:
 
-![network-screen](Ubuntu-networksetup.png)
+![network-screen](images/building-a-home-lab-1/Ubuntu-networksetup.png)
 
 For the sake of keeping things simple, we'll just leave this as DHCP for now and reconfigure it once we're in the OS. This is where you'd normally setup a static IP for the system dring install though, and you can even configure network bonds and bridges from here too, so it's worth experiementing a little here in the future.
 
 For the sake of brevity, for now just select "Done" and then "Done" again on the proxy configuration and archive mirror screens to get to the guided storage configuration screen:
 
-![storage-screen](Ubuntu-storagesetup.png)
+![storage-screen](images/building-a-home-lab-1/Ubuntu-storagesetup.png)
 
 Make sure to select the checkbox to setup a Logical Volume Management (LVM) group, as this will help us in the future if we ever need to expand the local storage in the future. If you're using a multi-disk system, you can also setup a software RAID volume in the next screen, but it's a bit more involved than what we're looking to cover in this guide so I'm leaving it out. A single disk is usually fine for an OS disk in any case (for home environments like this anyway - not in production), we'll cover creating a software RAID storage pool for the VM's later on which is probably the best move for beginners at least.
 
@@ -109,27 +110,27 @@ The next screen will simply show you a confirmation page with the changes the in
 
 Once you're happy, select "Done", and then when prompted, select "Continue" to format the disk ready for the OS:
 
-![confirm-erase](Ubuntu-formatdisk.png)
+![confirm-erase](images/building-a-home-lab-1/Ubuntu-formatdisk.png)
 
 This will bring you to the profile setup screen, where you can enter the server hostname, your username, and your passwod. Pop whatever details in you like, noting that this is your primary admin account, so the password should be secure but memorable, and then continue to the next screen.
 
 Make sure you check the box to install OpenSSH Server on the system:
 
-![install-ssh](Ubuntu-ssh-install.png)
+![install-ssh](images/building-a-home-lab-1/Ubuntu-ssh-install.png)
 
 Don't worry about the identity import for now, and select "Done", then "Done" again as we'll be handling the software installs ourselves so don't need anything pre-packaged.
 
 You'll now see the OS install log as it's running through the install (and maybe upgrade) of the system. This may take some time, so you can just leave this for 10 minutes or so, and then come back and reboot the machine when the process has finished:
 
-![install-complete](Ubuntu-installdone.png)
+![install-complete](images/building-a-home-lab-1/Ubuntu-installdone.png)
 
 ## Step 2: Configure Cockpit
 
 Once the installation is complete, and the system has rebooted you should be greeted by this (just hit <kbd>Ctrl</kbd>+<kbd>C</kbd> a few times if you have a bunch of crap over the screen - this is just the Ubuntu cloud config which usually loads after the system boots):
 
-![login-screen](Ubuntu-login.png)
+![login-screen](images/building-a-home-lab-1/Ubuntu-login.png)
 
-At this point, for the sake of easy management, I suggest remotely logging into the server via `ssh`. If you're on Windows and need an SSH client, you can install the native powershell module using [this guide](https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/).
+At this point, for the sake of easy management, I suggest remotely logging into the server via **ssh**. If you're on Windows and need an SSH client, you can install the native powershell module using [this guide](https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/).
 
 Depending on your network setup, you *should* be able to just use the following:
 
@@ -140,7 +141,7 @@ ssh james@big-poppa.local
 
 If that fails, you might need to grab the IP address from the host, which you can do by logging into it directly:
 
-![logged-in](Ubuntu-loggedin.png)
+![logged-in](images/building-a-home-lab-1/Ubuntu-loggedin.png)
 
 From there on your other system you just enter:
 
@@ -176,11 +177,13 @@ sleep 10 && \
 sudo shutdown -r now
 ```
 
-> Note: Since I originally wrote this, `cockpit-docker` has become unavailable on the default Focal Fossa repo. I'll write a post in the future to swap docker out for podman when `cockpit-podman` is ported to Ubuntu.
+{{< admonition note >}}
+Since I originally wrote this, **cockpit-docker** has become unavailable on the default Focal Fossa repo. I'll write a post in the future to swap docker out for podman when **cockpit-podman** is ported to Ubuntu.
+{{< /admonition >}}
 
 You should now see something like this before the system goes down for a reboot:
 
-![services-running](services-running.png)
+![services-running](images/building-a-home-lab-1/services-running.png)
 
 We can now continue the configuration through the web panel, which will be the main way we interact with this server from here on out.
 
@@ -194,7 +197,7 @@ Open a browser window on your computer and navigate to the IP address or hostnam
 
 Just ignore the certificate warning, this is because the system generates one during the install and it's not known to our other machine. Once you're past that you'll be greeted by a login screen for the cockpit web service - which you can access using the credentials created during the install:
 
-![cockpit-dash](Cockpit-dash.png)
+![cockpit-dash](images/building-a-home-lab-1/Cockpit-dash.png)
 
 From here we'll open the Terminal pane which will give us a shell on the box, which we'll use to configure the host to optimise it for hosting VM's and for management through Cockpit.
 
@@ -207,9 +210,9 @@ net.bridge.bridge-nf-call-arptables = 0' | sudo tee -a /etc/sysctl.conf && \
 sudo sysctl -p 1> /dev/null
 ```
 
-Which should output what was `echo`'d, meaning they've been applied.
+Which should output what was **echo**'d, meaning they've been applied.
 
-We'll also just add a `crontab` entry to apply this each boot, as Ubuntu's cloud config sometimes messes with this:
+We'll also just add a **crontab** entry to apply this each boot, as Ubuntu's cloud config sometimes messes with this:
 
 ```bash
 (sudo crontab -l 2>/dev/null; echo "@reboot sleep 30 ; sysctl -p") | sudo crontab -
@@ -217,7 +220,9 @@ We'll also just add a `crontab` entry to apply this each boot, as Ubuntu's cloud
 
 Now we can setup our network interfaces to allow Cockpit to manage them via the NetworkManager API:
 
-> Note that this will reboot the system, and change in network management will probably cause the system to forget its DHCP lease, so if you couldn't use the hostname.local before, you'll need to log into the system locally again to confirm the new IP.
+{{< admonition warning >}}
+This will reboot the system, and change in network management will probably cause the system to forget its DHCP lease, so if you couldn't use the hostname.local before, you'll need to log into the system locally again to confirm the new IP.
+{{< /admonition >}}
 
 ```bash
 sudo mv /etc/netplan/* ./ && \
@@ -235,11 +240,11 @@ sudo shutdown -r now
 
 Once your system comes back up (and you've found the new IP if your DHCP lease changed), head back to the web panel and log in, then navigate to the Networking pane:
 
-![cockpit-networking](Cockpit-networking.png)
+![cockpit-networking](images/building-a-home-lab-1/Cockpit-networking.png)
 
 From here we can set a static IP, and create a network bridge for our VM's. Make a note of the current active interface (highlighted below), and then click "Add Bridge".
 
-![active-link](Cockpit-active-iface.png)
+![active-link](images/building-a-home-lab-1/Cockpit-active-iface.png)
 
 You should then see a menu with a list of interfaces to add to the bridge along with the option to enable spanning-tree protocol. Here we want to select our currently active interface, along with enabling spanning-tree protocol (the default STP settings are fine for a home network).
 
@@ -249,7 +254,7 @@ To do this, simply select the `bridge0` interface from the list, then click the 
 
 I would highly recommend using custom DNS servers too, in the example below I've set mine to Cloudflare's `1.1.1.1` with Google's `8.8.8.8` as a fallback:
 
-![static-ip](Cockpit-static-ip.png)
+![static-ip](images/building-a-home-lab-1/Cockpit-static-ip.png)
 
 After hitting "Apply" you'll need to wait a few seconds for the new interface to come online, and then head over to your new IP address followed by `:9090` again to reconnect to the web panel (you'll need to log in again as well).
 
@@ -257,9 +262,11 @@ After hitting "Apply" you'll need to wait a few seconds for the new interface to
 
 Now we're up and running with the web panel, you may have noticed that we only have about 4GB of storage on the root volume. This is because Ubuntu doesn't provision the full disk by default when it sets up an LVM group, we can double check this by heading to the Storage panel where we can see the active disk, and the storage capacity (the active disk is `/dev/sda`, since the `/boot` volume is on `/dev/sda2` - we'll verify this in a minute):
 
-![storage-config](Cockpit-lvmstorage.png)
+![storage-config](images/building-a-home-lab-1/Cockpit-lvmstorage.png)
 
-> Your logical volume should also be `/dev/ubuntu-vg/ubuntu-lv`, if it's not, make a note of it.
+{{< admonition note >}}
+Your logical volume should also be `/dev/ubuntu-vg/ubuntu-lv`, if it's not, make a note of it.
+{{< /admonition >}}
 
 so we can head over to the Terminal pane again to expand the default storage group to cover the entirety of our OS disk. We'll first double check that the disk we found in Cockpit is the right one:
 
@@ -289,11 +296,13 @@ sudo lvm lvresize -l +100000 -r /dev/ubuntu-vg/ubuntu-lv /dev/sda3
 
 Once that's done, we can head back over to the storage pane and verify that our changes have been applied:
 
-![cockpit-lv-resized](Cockpit-lvmresized.png)
+![cockpit-lv-resized](images/building-a-home-lab-1/Cockpit-lvmresized.png)
 
 ### VM Storage
 
-> Note that if you don't have additional storage for the virtual machines, just ignore this section and move onto the [VM Networking](#vm-networking) section
+{{< admonition tip >}}
+If you don't have additional storage for the virtual machines, just ignore this section and move onto the [VM Networking](#vm-networking) section
+{{< /admonition >}}
 
 We'll start by making the mount point for the VM storage pool:
 
@@ -303,13 +312,13 @@ sudo mkdir -p /media/vm_pool
 
 Then we'll move on to configuring the storage volume, which we can do through Cockpit. Head over to the Storage pane and select the additional block device:
 
-![cockpit-additional-storage](Cockpit-additional.png)
+![cockpit-additional-storage](images/building-a-home-lab-1/Cockpit-additional.png)
 
 Click "Create Partition Table", then "Format". Now select "Create Partition" and just call it "vm_pool" to keep things simple. Set the mount point to the one we created:
 
-![cockpit-vm-poool](Cockpit-vm-pool.png)
+![cockpit-vm-poool](images/building-a-home-lab-1/Cockpit-vm-pool.png)
 
-Create the partition, and it should mount automatically, if it doesn't just mount it using the UI. Now we can setup the VM pool using `virsh`. First, we'll create the storage XML:
+Create the partition, and it should mount automatically, if it doesn't just mount it using the UI. Now we can setup the VM pool using **virsh**. First, we'll create the storage XML:
 
 ```bash
 printf "<pool type='dir'>
@@ -336,7 +345,7 @@ rm default.xml
 
 Now we can see this in the Virtual Machine pane:
 
-![libvirt-pool](Libvirt-pool.png)
+![libvirt-pool](images/building-a-home-lab-1/Libvirt-pool.png)
 
 As it's called "default", VM's we build through Cockpit will automatically be assigned to this pool.
 
@@ -375,7 +384,7 @@ rm semi-isolated.xml
 
 We should now see those VM VLAN's in Cockpit:
 
-![libvirt-vlans](Libvirt-network.png)
+![libvirt-vlans](images/building-a-home-lab-1/Libvirt-network.png)
 
 ### Security Hardening
 
@@ -383,13 +392,13 @@ Now we can begin hardening the security of the system, we'll start with the `/et
 
 First, we'll need to create an SSH ID if we don't already have one:
 
-> Note the two following commands should be executed on your **main machine, NOT the server**.
+{{< admonition warning >}}
+The **two** following commands should be executed on your **main machine, NOT the server**. If you're presented with the option to overwrite, just enter "no" or "n" and we'll use your existing ID.
+{{< /admonition >}}
 
 ```bash
 ssh-keygen -t rsa -b 4096 -f $HOME/.ssh/id_rsa -N ''
 ```
-
-> If you're presented with the option to overwrite, just enter "no" or "n" and we'll use your existing ID.
 
 Next, copy your SSH public-key to the authorised keys on the host machine:
 
@@ -398,7 +407,7 @@ Next, copy your SSH public-key to the authorised keys on the host machine:
 ssh-copy-id james@10.211.55.29
 ```
 
-Now we can restrict SSH access to lock-down remote access policies:
+Back on the server now we can restrict SSH access to lock-down remote access policies:
 
 ```bash
 echo '#Include /etc/ssh/sshd_config.d/*.conf
@@ -432,7 +441,7 @@ Subsystem sftp	/usr/lib/openssh/sftp-server
 sudo service sshd restart
 ```
 
-This prevents `root` login via SSH, and blocks empty passwords, as well as username-password style authentication (so only machines with your `~/.ssh/id_rsa` key will be able to access this machine via SSH).
+This prevents **root** login via SSH, and blocks empty passwords, as well as username-password style authentication (so only machines with your `~/.ssh/id_rsa` key will be able to access this machine via SSH).
 
 Next, we'll modify the automated-upgrades config file:
 
@@ -450,4 +459,4 @@ The above configures automatic upgrades for the system, which will install every
 
 ## Step 4: Tinker
 
-We're now in a place where you're basic homelab is set up and ready to rock. If you're happy to just play with it then you're all set. If you'd like to run through a couple of simple tasks to get you started, the next article will go through setting up a `pihole` DNS and DHCP server for network-wide ad-blocking, and confguring `ansible` and AWX for automating the deployment of VM's. I'll also look to put together a `docker-compose` guide later to cover simple container orchestration and management.
+We're now in a place where you're basic homelab is set up and ready to rock. If you're happy to just play with it then you're all set. If you'd like to run through a couple of simple tasks to get you started, the next article will go through setting up a **pihole** DNS and DHCP server for network-wide ad-blocking, and confguring **ansible** and AWX for automating the deployment of VM's. I'll also look to put together a `docker-compose` guide later to cover simple container orchestration and management.

@@ -1,0 +1,27 @@
+{{- define "title" }}{{ .Title }} - {{ .Site.Title }}{{ end -}}
+
+{{- define "content" -}}
+    {{- $params := .Scratch.Get "params" -}}
+    <div class="page single special">
+
+        {{- /* Content */ -}}
+        <div class="content" id="content">
+            {{- dict "Content" .Content "Ruby" $params.ruby "Fraction" $params.fraction "Fontawesome" $params.fontawesome | partial "function/content.html" | safeHTML -}}
+        </div>
+
+    </div>
+
+    <span class="last-update-footer">
+        {{- with .Site.Params.dateformat | default "2006-01-02" | .Lastmod.Format -}}
+            {{- dict "Date" . | T "updatedOnDate" -}}
+            {{- if $.Site.Params.gitRepo -}}
+                {{- with $.GitInfo -}}
+                    &nbsp;<a class="git-hash" href="{{ printf `%v/commit/%v` $.Site.Params.gitRepo .Hash }}" target="_blank" title="commit by {{ .AuthorName }}({{ .AuthorEmail }}) {{ .Hash }}: {{ .Subject }}">
+                        <i class="fas fa-hashtag fa-fw"></i>{{- .AbbreviatedHash -}}
+                    </a>
+                {{- end -}}
+            {{- end -}}
+        {{- end -}}
+    </span>
+
+{{- end -}}
