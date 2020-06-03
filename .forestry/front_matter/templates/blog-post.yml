@@ -8,9 +8,6 @@ fields:
 - type: text
   name: subtitle
   label: subtitle
-- type: date
-  name: date
-  label: date
 - type: text
   name: author
   label: author
