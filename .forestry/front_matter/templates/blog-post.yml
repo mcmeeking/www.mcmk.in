@@ -6,20 +6,50 @@ fields:
   name: title
   label: title
 - type: text
+  name: subtitle
+  label: subtitle
+- type: date
+  name: date
+  label: date
+- type: text
+  name: author
+  label: author
+- type: text
+  name: authorLink
+  label: link to author details
+- type: text
   name: description
   label: description
-- type: text
-  name: ProjectLevel
-  label: ProjectLevel
-- type: text
-  name: ProjectTime
-  label: ProjectTime
-- type: boolean
-  name: toc
-  label: toc
-- type: file
-  name: featuredImg
-  label: featuredImg
 - type: list
   name: tags
   label: tags
+- type: list
+  name: categories
+  label: categories
+- type: boolean
+  name: hiddenFromHomePage
+  label: hide post from homepage
+- type: boolean
+  name: hiddenFromSearch
+  label: hide from search index
+- type: text
+  name: ProjectLevel
+  label: project skill level
+- type: text
+  name: ProjectTime
+  label: project time
+- type: boolean
+  name: toc
+  label: table of contents
+- type: file
+  name: featuredImage
+  label: featured image
+- type: boolean
+  name: math
+  label: enable maths formulas
+- type: boolean
+  name: lightgallery
+  label: enable lightgallery
+- type: text
+  name: license
+  label: license

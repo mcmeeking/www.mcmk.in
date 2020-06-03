@@ -7,5 +7,8 @@ fields:
   config:
     required: false
   label: Title
+- type: boolean
+  name: hiddenFromSearch
+  label: hide from search index
 pages:
 - static/css/custom.css
