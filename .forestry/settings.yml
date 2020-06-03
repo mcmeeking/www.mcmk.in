@@ -16,7 +16,7 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  path: static/css
+  path: assets/css
   label: CSS
   create: all
   match: "**/*"
@@ -24,7 +24,7 @@ sections:
   templates:
   - raw-file
 - type: directory
-  path: static/js
+  path: assets/js
   label: Javascript
   create: all
   match: "**/*"
