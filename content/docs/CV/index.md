@@ -10,7 +10,7 @@ categories:
   - Documentation
 
 hiddenFromHomePage: false
-hiddenFromSearch: false
+hiddenFromSearch: true
 
 featuredImage: ""
 featuredImagePreview: ""

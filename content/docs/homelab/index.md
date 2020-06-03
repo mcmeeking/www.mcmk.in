@@ -9,7 +9,7 @@ tags: []
 categories:
   - Documentation
 
-hiddenFromHomePage: false
+hiddenFromHomePage: true
 hiddenFromSearch: false
 
 featuredImage: ""

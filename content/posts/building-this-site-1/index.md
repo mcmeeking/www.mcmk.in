@@ -4,6 +4,7 @@ date: 2019-08-31T11:46:23Z
 lastmod: 
 draft: true
 toc: true
+hiddenFromSearch: true
 images: 
 tags: 
   - hugo

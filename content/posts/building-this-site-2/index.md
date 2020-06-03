@@ -4,6 +4,7 @@ date: 1569109355
 lastmod:
 draft: true
 toc: true
+hiddenFromSearch: true
 images: 
 tags: 
   - hugo

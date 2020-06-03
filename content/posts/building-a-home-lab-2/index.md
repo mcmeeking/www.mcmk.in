@@ -2,6 +2,7 @@
 title: "Building a Homelab: Part 2"
 draft: true
 toc: true
+hiddenFromSearch: true
 tags: 
   - ubuntu
   - kvm

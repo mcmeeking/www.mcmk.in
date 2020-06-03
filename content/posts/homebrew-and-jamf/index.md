@@ -3,6 +3,7 @@ title: "Experimenting with Homebrew in Jamf"
 date:
 lastmod:
 draft: true
+hiddenFromSearch: true
 toc: true
 images: 
 tags: 
