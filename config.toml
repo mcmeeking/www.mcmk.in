@@ -734,3 +734,4 @@ enableEmoji = true
 
 [frontmatter]
   lastmod = ':git'
+  date = ["date", ':git']

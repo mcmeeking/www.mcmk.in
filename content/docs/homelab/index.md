@@ -1,7 +1,5 @@
 ---
 title: "Homelab"
-date: ':git'
-lastmod: 
 draft: true
 author: "James McMeeking"
 authorLink: ""

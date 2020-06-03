@@ -1,7 +1,5 @@
 ---
 title: "Curriculum Vitae"
-date: ':git'
-lastmod: 
 draft: false
 author: "James McMeeking"
 authorLink: ""
