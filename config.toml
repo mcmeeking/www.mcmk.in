@@ -95,7 +95,7 @@ enableEmoji = true
       # site description
       description = "Open source, automation, and tinkering."
       # site keywords
-      keywords = ["Open Source", "Automation", "Linux", "Tech"]
+      keywords = ["Open Source", "Automation", "Linux", "Tech", "James McMeeking"]
       # App icon config
       [languages.en.params.app]
         # optional site title override for the app when added to an iOS home screen or Android launcher
