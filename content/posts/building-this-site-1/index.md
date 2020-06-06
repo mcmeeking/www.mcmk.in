@@ -1,28 +1,43 @@
 ---
-title: "How to Build This Website: Part 1"
-date: 2019-08-31T11:46:23Z
+title: How to Build This Website
+date: '2019-08-31T11:46:23.000+00:00'
 lastmod: 
-draft: true
 toc: true
-hiddenFromSearch: true
+hiddenFromSearch: false
 images: 
-tags: 
-  - hugo
-  - nginx
-  - macOS
-  - git
----
+tags:
+- ubuntu
+- letsencrypt
+- nginx
+- hugo
+- git
+description: A step-by-step guide to building a simple static content website (like
+  this one), using Hugo, NGINX, and Let's Encrypt for TLS.
+categories:
+- Projects
+ProjectLevel: Intermediate
+ProjectTime: 3 hour
+subtitle: ''
+author: ''
+authorLink: ''
+hiddenFromHomePage: false
+featuredImage: ''
+math: false
+lightgallery: false
+license: ''
+draft: true
 
+---
 > If you wish to make an apple pie from scratch, you must first create the universe.
 > <cite>Carl Sagan</cite>
 
-First thing's first, and the first thing I want to go over is how this site is put together. Not so much as a definitive guide to building a self-hosted website, but more of a reminder for my future self which may be useful to others. As such this post assumes an awareness of `nginx`, `brew`, and `git` along with basic knowledge of their functionality.
+First thing's first, and the first thing I want to go over is how this site is put together. Not so much as a definitive guide to building a self-hosted website, but more of a reminder for my future self which may be useful to others. As such this post assumes an awareness of **nginx**, markdown, and **git** along with basic knowledge of HTML, TLS, DNS, and Docker.
 
-In this guide, I'll be using a fresh install of macOS Mojave 10.14.6 running on an old always-on Mac Mini.
+In this guide, I'll be using a fresh install of Ubuntu 20.04 running on the homelab host from my \[first post\](/posts/building-a-home-lab-1/).
 
 ## Step 0: Prepare the Environment
 
-For the setup of a self-hosted, public-facing, website we first need to make sure that people on the internet will be able to reach what we want them to reach, but *only* what we want them to reach. Hugo and Nginx will take care of the permissions for us, but it's a good idea to turn your system's firewall on and disable SSH/Remote Login (if it's enabled) through your system preferences before you forward any ports to your router.
+For the setup of a self-hosted, public-facing, website we first need to make sure that people on the internet will be able to reach what we want them to reach, but _only_ what we want them to reach. Hugo and Nginx will take care of the permissions for us, but it's a good idea to turn your system's firewall on and disable SSH/Remote Login (if it's enabled) through your system preferences before you forward any ports to your router.
 
 All of the tools we're going to use are open-source and publicly available to download and use, but the only tool which comes pre-packaged in macOS is `git`.
 
@@ -30,7 +45,7 @@ There are a number of ways to install the other two, but my preferred route is t
 
 Before we can install Homebrew, we need to install Apple's XCode developer tools. If you think you already have these on your system you can skip this step (Homebrew will attempt a download anyway if it can't find them).
 
-**Note:** You should *NEVER* blindly paste commands into your terminal and execute them without an understanding of what they are doing and verifying that they come from a trustworthy source. The rest of this guide will assume you've vetted the commands appropriately and are happy with the risks.
+**Note:** You should _NEVER_ blindly paste commands into your terminal and execute them without an understanding of what they are doing and verifying that they come from a trustworthy source. The rest of this guide will assume you've vetted the commands appropriately and are happy with the risks.
 
 ## Step 1: Install XCode Tools and Homebrew
 
@@ -131,7 +146,7 @@ For now, we're going to move onto publishing the site to the great wide world an
 
 Now we're going to get started on the Nginx configuration. Nginx, for those unfamiliar with it, is a HTTP(S) web server and reverse proxy - similar to Apache (which is the web server built into the macOS Server app).
 
-First up, we'll modify the default config so that it's pointing to our webroot. We don't want *everything* to be accessible from the internet, so we'll just point it to the "public" directory inside.
+First up, we'll modify the default config so that it's pointing to our webroot. We don't want _everything_ to be accessible from the internet, so we'll just point it to the "public" directory inside.
 
 The default config file is `/usr/local/etc/nginx/nginx.conf`, open it in your favourite text editor and replace this:
 
@@ -199,7 +214,7 @@ You can check it's working by visiting [http://localhost](http://localhost), whi
 
 Finally, we need to make our site visible to the great wide-world. For now, we'll just forward port 80 on our machine to the firewall on our router.
 
-The admin panel for your router will probably be either <http://192.168.0.1>, or <http://192.168.1.1>. The default login details will probably be on a label directly on the hub.
+The admin panel for your router will probably be either [http://192.168.0.1](http://192.168.0.1), or [http://192.168.1.1](http://192.168.1.1). The default login details will probably be on a label directly on the hub.
 
 Once that's done, you can check it's working with the following command:
 
