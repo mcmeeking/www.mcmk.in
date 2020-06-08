@@ -131,7 +131,7 @@ Member of the 1st line support team handling and resolving issues from clients r
 
 ### <span class="cv-sub">Hobbies & Interests</span>
 
-Hobbies are DIY, electronics, and weightlifting. Interests are mixed-martial arts, technology, and learning.
+Hobbies are DIY, electronics, and weightlifting. Interests are mixed-martial arts, technology, science, philosophy, and learning.
 
 </div>
 
