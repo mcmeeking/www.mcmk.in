@@ -94,7 +94,7 @@ You can grab it, make it executable, and install it with the following (although
 
 ```bash
 cd $HOME
-curl -LO https://www.mcmk.in/build-you-own-website/pull-latest-hugo.sh
+curl -LO https://www.mcmk.in/scripts/pull-latest-hugo.sh
 chmod +x ./pull-latest-hugo.sh
 ./pull-latest-hugo.sh
 sudo dpkg -i hugo_extended*.deb
@@ -390,7 +390,7 @@ The final thing for us to take care of now is automating the deployment of the w
 I've put together a short [bash script](build-site.sh) which takes care of this which you can drop on your AWS box and set to run regularly like so:
 
 ```bash
-sudo curl -L https://www.mcmk.in/build-you-own-website/build-site.sh -o /usr/local/bin/build-site
+sudo curl -L https://www.mcmk.in/scripts/build-site.sh -o /usr/local/bin/build-site
 sudo chmod +x /usr/local/bin/build-site
 printf "00 00 * * *    /usr/bin/docker run -it --rm --name certbot --net host -v /etc/letsencrypt/:/etc/letsencrypt/ certbot/dns-cloudflare renew --dns-cloudflare --dns-cloudflare-credentials /etc/letsencrypt/cloudflare.ini --dns-cloudflare-propagation-seconds 60 >> /var/log/letsencrypt.log 2>&1\n*/5 * * * *    /usr/local/bin/build-site >> /var/log/build-site.log\n" | sudo crontab -
 ```
