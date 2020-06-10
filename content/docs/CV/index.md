@@ -92,6 +92,8 @@ Member of the 1st line support team handling and resolving issues from clients r
 </div>
 
 <div class="col-2">
+
+<div class="col-2-block">
   
 <span class="cv-sub">FLUENT IN</span>
 
@@ -103,6 +105,10 @@ Member of the 1st line support team handling and resolving issues from clients r
 - CI/CD Concepts
 - Network Admin and Security
 
+</div>
+
+<div class="col-2-block">
+
 <span class="cv-sub">FAMILIAR WITH</span>
 
 - AWS, Azure, GCP
@@ -110,6 +116,10 @@ Member of the 1st line support team handling and resolving issues from clients r
 - VMware, HyperV, KVM
 - Containerisation
 - OpSec/InfoSec
+
+</div>
+
+<div class="col-2-block">
 
 <span class="cv-sub">INTERESTED IN</span>
 
@@ -119,12 +129,18 @@ Member of the 1st line support team handling and resolving issues from clients r
 - Distributed Computing
 - ML/AI Solutions
 
+</div>
+
+<div class="col-2-block">
+
 <span class="cv-sub">CERTIFICATIONS</span>
 
 - Apple Certified Support Professional
 - Azure Fundamentals
 - Apple Certified Mac Integrations Associate
 - Jamf Certified Tech
+
+</div>
 
 ### <span class="cv-sub">Hobbies & Interests</span>
 
