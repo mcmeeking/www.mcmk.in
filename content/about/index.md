@@ -31,6 +31,8 @@ Check the [LICENSE file](https://github.com/mcmeeking/www.mcmk.in/blob/master/LI
 
 Thanks to the authors of following resources included in the theme:
 
+- [Winning](https://github.com/cssandstuff/hugo-theme-winning)
+- [wkhtmltopdf](https://github.com/wkhtmltopdf/wkhtmltopdf)
 - [LoveIt](https://github.com/dillonzq/LoveIt)
 - [normalize.css](https://github.com/necolas/normalize.css)
 - [Font Awesome](https://fontawesome.com/)
