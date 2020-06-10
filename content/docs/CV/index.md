@@ -91,9 +91,6 @@ Member of the 1st line support team handling and resolving issues from clients r
 
 </div>
 
-<div class="vl">
-</div>
-
 <div class="col-2">
 
 <span class="cv-sub">FLUENT IN</span>

@@ -65,9 +65,9 @@ html {
 
 .col-2 {
     width: 28%;
+    float: right;
     font-weight: 200;
     font-size: 0.85em;
-    display: inline-block;
 }
 
 .col-2 ul {
@@ -84,11 +84,6 @@ html {
 .col-2 ul > li:before {
     content: "—  ";
     text-indent: -5px;
-}
-
-.vl {
-    display: inline-block;
-    width: 11%;
 }
 
 .cv-date {
