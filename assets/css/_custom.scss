@@ -52,6 +52,37 @@ html {
     font-size: 0.85em;
     display: inline-block;
 }
+    
+.col-2 {
+    width: 28%;
+    float: right;
+    font-weight: 200;
+    font-size: 0.85em;
+}
+
+@media only screen and (max-width: 680px) {
+    
+    .col-1 {
+        width: 100%;
+        font-weight: 200;
+        font-size: 0.85em;
+    }
+    
+    .col-2 {
+        width: 100%;
+        font-weight: 200;
+        float: unset;
+        font-size: 0.85em;
+    }
+
+    .col-2-block {
+        display: inline-grid;
+        width: 45%;
+        margin: 0 auto;
+        padding: 2%;
+    }
+
+}
 
 .col-1 ul {
     margin: 0;
@@ -61,13 +92,6 @@ html {
 .col-1 ul > li {
     line-height: 1.5;
     padding: 0.6em;
-}
-
-.col-2 {
-    width: 28%;
-    float: right;
-    font-weight: 200;
-    font-size: 0.85em;
 }
 
 .col-2 ul {
