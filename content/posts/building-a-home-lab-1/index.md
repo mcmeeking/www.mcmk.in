@@ -1,19 +1,8 @@
 ---
 title: "Building a Homelab: Part 1"
-subtitle: ""
 date: 2020-04-28
-author: "James McMeeking"
-authorLink: "mailto:james@mcmk.in"
-description: A beginner's guide to bulding a home-lab, using cheap hardware and free and open-source tools.
-
-draft: false
 toc: true
-
-ProjectLevel: Beginner
-ProjectTime: 2 hour
-
-featuredImage: images/building-a-home-lab-1/featured.jpg
-
+description: A beginner's guide to bulding a home-lab, using cheap hardware and free and open-source tools.
 tags:
   - ubuntu
   - kvm
@@ -22,6 +11,15 @@ tags:
 
 categories:
   - Projects
+ProjectLevel: Beginner
+ProjectTime: 2 hour
+subtitle: ''
+author: 'James McMeeking'
+authorLink: 'james@mcmk.in'
+hiddenFromHomePage: false
+hiddenFromSearch: false
+featuredImage: images/building-a-home-lab-1/featured.jpg
+draft: false
 ---
 
 ## Introduction

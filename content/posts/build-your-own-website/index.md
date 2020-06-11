@@ -1,10 +1,8 @@
 ---
 title: How to (easily) Build Your Own Website (for free)
 date: 2020-06-06
-lastmod: 
 toc: true
-hiddenFromSearch: false
-images: 
+description: A step-by-step guide to building a simple, secure, static-content website (like this one), using Amazon AWS, Hugo, NGINX, GitHub, Forestry, Cloudflare, and Let's Encrypt.
 tags:
 - ubuntu
 - certbot
@@ -13,7 +11,7 @@ tags:
 - git
 - forestry
 - docker
-description: A step-by-step guide to building a simple, secure, static-content website (like this one), using Amazon AWS, Hugo, NGINX, GitHub, Forestry, Cloudflare, and Let's Encrypt.
+
 categories:
 - Projects
 ProjectLevel: Intermediate
@@ -22,12 +20,9 @@ subtitle: ''
 author: 'James McMeeking'
 authorLink: 'james@mcmk.in'
 hiddenFromHomePage: false
+hiddenFromSearch: false
 featuredImage: 'images/build-your-own-website/featured.jpg'
-math: false
-lightgallery: true
-license: ''
 draft: false
-
 ---
 
 {{< admonition quote "Carl Sagan" >}}
