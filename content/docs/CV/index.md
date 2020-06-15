@@ -43,14 +43,12 @@ license: ""
 
 # <span class="cv-head">JAMES McMEEKING</span>
 
-<span class="cv-contact-block">
+<div class="cv-contact-block">
 <a href="https://www.mcmk.in/vcard.vcf" title="Phone" target="_blank" rel="noopener noreffer me"><i class="fas fa-address-card fa-fw"></i></a><a href="https://github.com/mcmeeking" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github fa-fw"></i></a><a href="https://linkedin.com/in/jmcmeeking91" title="LinkedIn" target="_blank" rel="noopener noreffer me"><i class="fab fa-linkedin fa-fw"></i></a><a href="https://twitter.com/TheGreatMcMeek" title="Twitter" target="_blank" rel="noopener noreffer me"><i class="fab fa-twitter fa-fw"></i></a><a href="https://stackoverflow.com/users/10272933" title="Stack Overflow" target="_blank" rel="noopener noreffer me"><i class="fab fa-stack-overflow fa-fw"></i></a><a href="mailto:james@mcmk.in" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a>
-</span>
-
-<span class="cv-abstract">
+</div>
+<div class="cv-abstract">
 Loves learning new things, and is passionate about technology and the open-source philosophy in particular. Has been working in the industry for over 6 years and in that time has developed from an apprentice to a professional services engineer for the UK's largest Apple enterprise service provider. Primarily enjoys the fast-pace and challenge that the IT industry brings, but is also driven by a desire to improve the world through technology and make a positive difference to peoples’ lives.
-</span>
-
+</div>
 <div class="col-1">
 
 ## <span class="cv-sub">Professional Experience</span>
@@ -90,12 +88,10 @@ Member of the 1st line support team handling and resolving issues from clients r
 *SASIE Ltd — Systems Support and IT Department*
 
 </div>
-
 <div class="vl">
 </div>
-
 <div class="col-2">
-  
+<div class="col-2-block">
 <span class="cv-sub">FLUENT IN</span>
 
 - Bash & Python
@@ -106,6 +102,8 @@ Member of the 1st line support team handling and resolving issues from clients r
 - CI/CD Concepts
 - Network Admin and Security
 
+</div>
+<div class="col-2-block">
 <span class="cv-sub">FAMILIAR WITH</span>
 
 - AWS, Azure, GCP
@@ -114,6 +112,8 @@ Member of the 1st line support team handling and resolving issues from clients r
 - Containerisation
 - OpSec/InfoSec
 
+</div>
+<div class="col-2-block">
 <span class="cv-sub">INTERESTED IN</span>
 
 - Automation
@@ -122,6 +122,8 @@ Member of the 1st line support team handling and resolving issues from clients r
 - Distributed Computing
 - ML/AI Solutions
 
+</div>
+<div class="col-2-block">
 <span class="cv-sub">CERTIFICATIONS</span>
 
 - Apple Certified Support Professional
@@ -129,12 +131,13 @@ Member of the 1st line support team handling and resolving issues from clients r
 - Apple Certified Mac Integrations Associate
 - Jamf Certified Tech
 
+</div>
+<div class="cv-interest-block">
+
 ### <span class="cv-sub">Hobbies & Interests</span>
 
 Hobbies are DIY, electronics, and weightlifting. Interests are mixed-martial arts, technology, science, philosophy, and learning.
 
 </div>
-
----
-
-<span class="cv-footer">The latest version of this document can be downloaded as a PDF from <a href="https://www.mcmk.in/docs/cv/james.mcmeeking.pdf">here</a>. A static (not automatically-generated), possibly outdated, and uglier Microsoft Word compatible ODT document can also be downloaded from <a href="https://www.mcmk.in/docs/cv/james.mcmeeking.odt">here</a>.</span>
+</div>
+<div class="cv-footer"><hr>The latest version of this document can be downloaded as a PDF from <a href="https://www.mcmk.in/docs/cv/james.mcmeeking.pdf">here</a>.<br /> A static (not automatically-generated), possibly outdated, and uglier Microsoft Word compatible ODT document can also be downloaded from <a href="https://www.mcmk.in/docs/cv/james.mcmeeking.odt">here</a>.</div>

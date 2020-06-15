@@ -51,7 +51,7 @@ html {
 }
 
 .col-1 {
-    width: 59%;
+    width: 64%;
     font-weight: 200;
     font-size: 0.85em;
     display: inline-block;
@@ -59,14 +59,20 @@ html {
 
 .vl {
     display: inline-block;
-    width: 11%;
+    width: 8%;
 }
 
 .col-2 {
-    width: 28%;
+    width: 29%;
     font-weight: 200;
     font-size: 0.85em;
     display: inline-block;
+    position: absolute;
+    margin-top: 0.6rem;
+}
+
+.col-2-block {
+    display: inline;
 }
 
 .col-1 ul {
