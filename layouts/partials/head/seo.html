@@ -18,8 +18,7 @@
 
 {{- /* Home SEO */ -}}
 {{- if .IsHome -}}
-    <div class="hidden-data">
-        <script type="application/ld+json">
+        <script type="application/ld+json" class="hidden-data">
         {
             "@context": "http://schema.org",
             "@type": "WebSite",
@@ -33,6 +32,7 @@
                     "name": {{ . | safeHTML }}
                 },
             {{- end -}}
+                "keywords": "James McMeeking, McMeeking",
             {{- with .Site.Params.description -}}
                 "description": {{ . | safeHTML }},
             {{- end -}}
@@ -48,12 +48,9 @@
             "name": {{ .Site.Title | safeHTML }}
         }
         </script>
-    </div>
-
 {{- /* Page SEO */ -}}
 {{- else if .IsPage -}}
-    <div class="hidden-data">
-        <script type="application/ld+json">
+        <script type="application/ld+json" class="hidden-data">
         {
             "@context": "http://schema.org",
             "@type": "BlogPosting",
@@ -109,5 +106,4 @@
             "description": {{ .Description | safeHTML }}
         }
         </script>
-    </div>
 {{- end -}}
