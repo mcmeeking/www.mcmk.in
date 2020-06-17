@@ -21,7 +21,7 @@ author: 'James McMeeking'
 authorLink: 'james@mcmk.in'
 hiddenFromHomePage: false
 hiddenFromSearch: false
-featuredImage: 'images/build-your-own-website/featured.webp'
+featuredImage: 'images/build-your-own-website/featured.jpg'
 draft: false
 ---
 
