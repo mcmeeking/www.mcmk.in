@@ -18,7 +18,7 @@ author: 'James McMeeking'
 authorLink: 'james@mcmk.in'
 hiddenFromHomePage: false
 hiddenFromSearch: false
-featuredImage: images/building-a-home-lab-1/featured.jpg
+featuredImage: images/building-a-home-lab-1/featured.webp
 draft: false
 ---
 
