@@ -44,11 +44,12 @@ license: ""
 # <span class="cv-head">JAMES McMEEKING</span>
 
 <div class="cv-contact-block">
-<a href="https://www.mcmk.in/vcard.vcf" title="Phone" target="_blank" rel="noopener noreffer me"><i class="fas fa-address-card fa-fw"></i></a><a href="https://github.com/mcmeeking" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github fa-fw"></i></a><a href="https://linkedin.com/in/jmcmeeking91" title="LinkedIn" target="_blank" rel="noopener noreffer me"><i class="fab fa-linkedin fa-fw"></i></a><a href="https://twitter.com/TheGreatMcMeek" title="Twitter" target="_blank" rel="noopener noreffer me"><i class="fab fa-twitter fa-fw"></i></a><a href="https://stackoverflow.com/users/10272933" title="Stack Overflow" target="_blank" rel="noopener noreffer me"><i class="fab fa-stack-overflow fa-fw"></i></a><a href="mailto:james@mcmk.in" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a>
+<a href="https://github.com/mcmeeking" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github fa-fw"></i></a><a href="https://linkedin.com/in/jmcmeeking91" title="LinkedIn" target="_blank" rel="noopener noreffer me"><i class="fab fa-linkedin fa-fw"></i></a><a href="https://twitter.com/TheGreatMcMeek" title="Twitter" target="_blank" rel="noopener noreffer me"><i class="fab fa-twitter fa-fw"></i></a><a href="https://stackoverflow.com/users/10272933" title="Stack Overflow" target="_blank" rel="noopener noreffer me"><i class="fab fa-stack-overflow fa-fw"></i></a><a href="mailto:james@mcmk.in" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="https://www.mcmk.in/vcard.vcf" title="Phone" target="_blank" rel="noopener noreffer me"><i class="fas fa-phone fa-fw"></i></a>
 </div>
 <div class="cv-abstract">
-Loves learning new things, and is passionate about technology and the open-source philosophy in particular. Has been working in the industry for over 6 years and in that time has developed from an apprentice to a professional services engineer for the UK's largest Apple enterprise service provider. Primarily enjoys the fast-pace and challenge that the IT industry brings, but is also driven by a desire to improve the world through technology and make a positive difference to peoples’ lives.
+Loves learning new things, and is passionate about technology and the open-source philosophy in particular. Has been working in the industry for over 6 years and in that time has developed from an apprentice to a professional services engineer for the UK's largest Apple enterprise service provider. Looking now for a more Linux-focused position to move closer to the beating heart of the technological revolution. Primarily enjoys the fast-pace and challenge that the IT industry brings, but is also driven by a desire to improve the world through technology and make a positive difference to peoples’ lives.
 </div>
+
 <div class="col-1">
 
 ## <span class="cv-sub">Professional Experience</span>
@@ -57,21 +58,23 @@ Loves learning new things, and is passionate about technology and the open-sourc
 
 *Jigsaw Systems Ltd — Professional Services Engineer*
 
-Site work; installing and configuring hardware and applications for customers of Jigsaw24, and providing technical advice and assistance for both external and internal projects.
+Site work; primarily project work with some support. Installing and configuring hardware and applications for customers of Jigsaw24, and providing technical advice and assistance for both external and internal jobs. Work with a *vast* array of technologies including Ubuntu, CentOS, macOS, Windows Server, Azure, AWS, Jamf, Intune, Cisco, Sonicwall, and more. Regularly develop admin and management workflows for mid-sized estates (500-2,000 client machines), and often work with large (2,000-10,000+ client) sites.
 
-- Install and configure servers, workstations, NAS arrays, mobile devices, etc.
+- Install, support, and configure servers, workstations, NAS arrays, mobile devices, etc.
 - Technical design and scoping of upcoming projects, and liaising with customers
 - Compiling documentation on installations and upgrades for use by the service desk
+- Developing automation workflows for onboarding, configuration, management/monitoring, and general admin
 
 <span class="cv-date">Aug 2017 – Jul 2018</span>
 
 *Jigsaw Systems Ltd — Technical Support Supervisor*
 
-Lead member of the 1st line support team providing technical oversight and an escalation point to team members.
+Lead member of the 1st line support team providing technical oversight and an escalation point to team members. Provided support for the entire range of Jigsaw24's product catalogue, ranging from iPhones/iPads, to pro-audio solutions from AVID, pro-video solutions from BlackMagic, and networking, attached storage, and client machines for SMB's, enterprise, and consumer customers alike.
 
 - Training and documentation development
 - Workflow design, optimisation, and deployment through company CRM ([Salesforce](http://www.salesforce.com/))
 - Direct escalation point for complex, or high-priority issues
+- Escalation point for troubleshooting of hardware/software issues
 
 <span class="cv-date">Apr 2015 – Aug 2017</span>
 
@@ -85,7 +88,13 @@ Member of the 1st line support team handling and resolving issues from clients r
 
 <span class="cv-date">Mar 2014 – Mar 2015</span>
 
-*SASIE Ltd — Systems Support and IT Department*
+*SASIE Ltd — Systems Administrator (Windows & Linux)*
+
+Initially hired as an IT apprentice to maintain the company website, after a month was made responsible for office IT management and then full systems administration after spearheading an office move from managed-space to a dedicated corporate office building. Managed a small handful of Windows 7 client machines, and built and managed a business-grade PBX using an Ubuntu server and the open-source PBX package [Asterisk](https://www.asterisk.org/).
+
+- Responsible for management of website, webmail, and hosting
+- Handle patching and backup of client machines and PBX server
+- Occaisionally sent to customer sites to support installations team with IT issues
 
 </div>
 <div class="vl">
@@ -108,8 +117,9 @@ Member of the 1st line support team handling and resolving issues from clients r
 
 - AWS, Azure, GCP
 - Windows Server Sysadmin
+- Ansible and Puppet
 - VMware, HyperV, KVM
-- Containerisation
+- Containerisation (Docker & Podman)
 - OpSec/InfoSec
 
 </div>
@@ -126,18 +136,36 @@ Member of the 1st line support team handling and resolving issues from clients r
 <div class="col-2-block">
 <span class="cv-sub">CERTIFICATIONS</span>
 
+- RHCSA (currently studying)
 - Apple Certified Support Professional
 - Azure Fundamentals
 - Apple Certified Mac Integrations Associate
 - Jamf Certified Tech
+- Basic DBS Check
 
 </div>
-<div class="cv-interest-block">
+<div class="col-2-block">
+<span class="cv-sub">EDUCATION</span>
 
-### <span class="cv-sub">Hobbies & Interests</span>
+- Level 3 Apprenticeship in IT and Professional Telecoms
+- Nottingham Trent University - Physics (no degree acquired) 
+- A-levels in Physics, Maths, and Chemistry
+
+</div>
+<div class="col-2-block">
+<span class="cv-sub">ACHIEVEMENTS</span>
+
+- Built a self-hosted website compliant with HIPAA, NIST, and PCI-DSS security standards
+- Personally developed and implemented an employee onboarding workflow for a FTSE 250 company
+- Built a business-grade PBX from scratch in two weeks using Asterisk
+
+</div>
+<div class="col-2-block">
+<span class="cv-sub">HOBBIES & INTERESTS</span>
 
 Hobbies are DIY, electronics, and weightlifting. Interests are mixed-martial arts, technology, science, philosophy, and learning.
 
 </div>
 </div>
-<div class="cv-footer"><hr>The latest version of this document can be downloaded as a PDF from <a href="https://www.mcmk.in/docs/cv/james.mcmeeking.pdf">here</a>.<br /> A static (not automatically-generated), possibly outdated, and uglier Microsoft Word compatible ODT document can also be downloaded from <a href="https://www.mcmk.in/docs/cv/james.mcmeeking.odt">here</a>.</div>
+<hr>
+<div class="cv-footer">The latest version of this document can be downloaded as a PDF from <a href="https://www.mcmk.in/docs/cv/james.mcmeeking.pdf">here</a>.<br /> A static (not automatically-generated), possibly outdated, and uglier Microsoft Word compatible ODT document can also be downloaded from <a href="https://www.mcmk.in/docs/cv/james.mcmeeking.odt">here</a>.</div>
