@@ -83,7 +83,7 @@ sudo ufw enable             # Activate local firewall
 
 ## Step 1: Install **hugo**, **docker** and **nginx**
 
-Now we're ready to pull down the apps we'll be making use of. Ubuntu 18.04 repos are a little behind the latest version of **hugo** at time of writing, so we'll be downloading the installer from their github releases page. I've written a little script you can grab from [here](pull-latest-hugo.sh) which *should* pull the latest version of the extended **hugo** Debian installer, but it's worth double checking the version you get is correct as the syntax may change in future releases.
+Now we're ready to pull down the apps we'll be making use of. Ubuntu 18.04 repos are a little behind the latest version of **hugo** at time of writing, so we'll be downloading the installer from their github releases page. I've written a little script you can grab from [here](/scripts/pull-latest-hugo.sh) which *should* pull the latest version of the extended **hugo** Debian installer, but it's worth double checking the version you get is correct as the syntax may change in future releases.
 
 You can grab it, make it executable, and install it with the following (although it you're just manually grabbing the .deb from the Github releases page you can just run the **dpkg** part):
 
@@ -382,7 +382,7 @@ Setup is simple and easy too, just create an account (you can just use your GitH
 
 The final thing for us to take care of now is automating the deployment of the website to our AWS box, so any changes we make in Forestry (or to the git repo in general) are pulled, merged, and built on the AWS box without us having to manually remote onto it and perform those actions ourselves.
 
-I've put together a short [bash script](build-site.sh) which takes care of this which you can drop on your AWS box and set to run regularly like so:
+I've put together a short [bash script](/scripts/build-site.sh) which takes care of this which you can drop on your AWS box and set to run regularly like so:
 
 ```bash
 sudo curl -L https://www.mcmk.in/scripts/build-site.sh -o /usr/local/bin/build-site
