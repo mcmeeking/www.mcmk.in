@@ -11,7 +11,7 @@ themesDir = "themes/"
 
 # website title
 # 网站标题
-title = "James McMeeking's Blog"
+title = "James McMeeking's Blog - Open source, automation, and tinkering."
 
 # whether to use robots.txt
 # 是否使用 robots.txt
@@ -93,7 +93,7 @@ enableEmoji = true
         weight = 6
     [languages.en.params]
       # site description
-      description = "Open source, automation, and tinkering."
+      description = "I set this site up in my spare time so I'd have a place I could detail things I've been working on or thinking about, along with any docs or files that might be of interest. I'm aiming to post here at least once a month, maybe more, but will try to keep things interesting and focused on a particular topic at a time."
       # site keywords
       keywords = ["Open Source", "Automation", "Linux", "Tech", "James McMeeking"]
       # App icon config
@@ -145,7 +145,7 @@ enableEmoji = true
           # title shown in home page (HTML format is supported)
           title = "Open source, automation, and tinkering."
           # subtitle shown in home page
-          subtitle = ""
+          subtitle = "(and maybe a hair of crackpot philosophy)"
           # whether to use typeit animation for subtitle
           typeit = false
           # whether to show social links
