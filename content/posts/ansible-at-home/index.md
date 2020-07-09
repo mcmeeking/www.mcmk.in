@@ -2,7 +2,7 @@
 title: How to setup Ansible AWX (Tower) at home
 date: 2020-06-15
 toc: true
-description: A guide on setting up and configuring Ansible and Ansible AWX (open-source branch of Ansible Tower) at home to manage configuration for your home lab, including off-site git repo for disaster recovery and automated host discovery.
+description: A guide on installing and configuring Ansible and Ansible AWX (open-source clone of Ansible Tower) at home to manage configuration for your home lab, including off-site git repo for disaster recovery.
 tags:
 - centos
 - podman
@@ -20,7 +20,6 @@ author: 'James McMeeking'
 authorLink: 'james@mcmk.in'
 hiddenFromHomePage: false
 hiddenFromSearch: true
-featuredImage: '/images/ansible-at-home/featured.jpg'
 draft: true
 ---
 
@@ -50,31 +49,49 @@ curl -LO http://mirror.centos.org/centos/7/extras/x86_64/Packages/cockpit-docker
 sudo rpm -i cockpit-docker-195.6-1.el7.centos.x86_64.rpm --noverify && \
 rm cockpit-docker-195.6-1.el7.centos.x86_64.rpm && \
 sudo pip3 install --user docker-compose && \
-sudo systemctl enable --now cockpit.socket nginx docker && \
+sudo systemctl enable --now cockpit.socket docker && \
+sudo firewall-cmd --zone=public --add-masquerade --permanent
 sudo firewall-cmd --add-service="cockpit" --permanent && \
 sudo firewall-cmd --reload && \
-git clone -b 12.0.0 https://github.com/ansible/awx.git && \
-cd awx/installer && \
 exec $SHELL
 ```
 
-We should now be able to connect to our box by heading to `https://lan.ip.of.the.box:9090` and there should be a "Podman Containers" option once we've logged in:
+## Step 1: Install AWX
 
-![Cockpit-podman-containers](/images/ansible-at-home/Cockpit-podman-containers.png)
-
-Now we can install **podman-compose** which is a utility that simplifies the container config in (almost) the same way as **docker-compose**:
+We should now be able to connect to our box by heading to `https://lan.ip.of.the.box:9090` and there should be a "Containers" option once we've logged in which is where the docker containers will show up. Open the terminal to the box and we'll clone the AWX repo for the latest stable release (at time of writing that is `12.0.0`) then we'll modify the default settings and run the `install.yml` andsible playbook to setup the host:
 
 ```bash
-pip3 install podman-compose
-podman-compose -h
+git clone -b 12.0.0 https://github.com/ansible/awx.git && \
+cd awx/installer && \
+mkdir -p ~/.awx/ssl/private && \
+chmod go-rx ~/.awx/ssl/private && \
+openssl req -x509 -newkey rsa:4096 -keyout ~/.awx/ssl/private/privkey.pem -out ~/.awx/ssl/cert.pem -days 3650 -nodes -subj "/CN=\"$( hostname -f )\"" && \
+sed -i "s@#ssl_certificate=@ssl_certificate=$HOME/.awx/ssl/cert.pem@g" inventory && \
+sed -i "s@#ssl_certificate_key=@ssl_certificate_key=$HOME/.awx\/ssl/private/privkey.pem@g" inventory && \
+PGREPASS="$( openssl rand -base64 256 )" && \
+ADMNPASS="$( openssl rand -base64 256 )" && \
+SECRTKEY="$( openssl rand -base64 256 )" && \
+sed -i "s@pg_password=awxpass@pg_password=${PGREPASS:0:32}@g" inventory && \
+sed -i "s@admin_password=password@admin_password=${ADMNPASS:0:16}@g" inventory && \
+sed -i "s@secret_key=awxsecret@secret_key=${SECRTKEY:0:64}@g" inventory && \
+sudo ansible-playbook -i inventory install.yml && \
+printf '#######################################################################
+Configuration Complete
+#######################################################################
+
+Your postgres password is:  %s
+Your secret key is:         %s
+
+You can now access AWX at   https://%s
+Using the username:         admin
+Ans the password:           %s
+' "${PGREPASS:0:32}" "${SECRTKEY:0:64}" "$( hostname -f )" "${ADMNPASS:0:16}"
 ```
 
-Now we'll clone the AWX repo to a local folder, and setup a hacky stand-in for **docker** and **docker-compose**:
+That's it! Easy peasy. If you've got a reverse proxy on your network I'd suggest pointing your DNS A records at the proxy and creating a server conf file to the config to enforce HTTPS rather than using the insecure HTTP that it defaults to. You can use this conf for **nginx** if so:
 
-That's it for the prep.
+## Step 2: Configure AWX
 
-## Step 1: Configure **podman-compose**
+Now we're ready to setup our AWX instance. The default username and password are `admin` and `password`, so we'll start by changing those. Head to the admin user 
 
-{{< admonition note >}}
-It's worth pointing out here that some of these values may need to be different on your setup than on mine. If you're running other services which use port 
-{{< /admonition >}}
+![AWX-]

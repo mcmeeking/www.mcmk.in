@@ -168,4 +168,4 @@ Hobbies are DIY, electronics, and weightlifting. Interests are mixed-martial art
 </div>
 </div>
 <hr>
-<div class="cv-footer">The latest version of this document can be downloaded as a PDF from <a href="https://www.mcmk.in/docs/cv/james.mcmeeking.pdf">here</a>.<br /> A static (not automatically-generated), possibly outdated, and uglier Microsoft Word compatible ODT document can also be downloaded from <a href="https://www.mcmk.in/docs/cv/james.mcmeeking.odt">here</a>.</div>
+<div class="cv-footer">This document was automatically generated.<br />The latest version of this document can be downloaded as a PDF from <a href="https://www.mcmk.in/docs/cv/james.mcmeeking.pdf">here</a> and as an RTF from <a href="https://www.mcmk.in/docs/cv/james.mcmeeking.rtf">here</a>.</div>

@@ -11,7 +11,7 @@ themesDir = "themes/"
 
 # website title
 # 网站标题
-title = "mcmk.in"
+title = "James McMeeking - Open source, automation, and tinkering."
 
 # whether to use robots.txt
 # 是否使用 robots.txt
@@ -93,13 +93,13 @@ enableEmoji = true
         weight = 6
     [languages.en.params]
       # site description
-      description = "Open source, automation, and tinkering."
+      description = "I set this site up in my spare time so I'd have a place I could detail things I've been working on or thinking about, along with any docs or files that might be of interest."
       # site keywords
       keywords = ["Open Source", "Automation", "Linux", "Tech", "James McMeeking"]
       # App icon config
       [languages.en.params.app]
         # optional site title override for the app when added to an iOS home screen or Android launcher
-        title = ""
+        title = "mcmk.in"
         # whether to omit favicon resource links
         noFavicon = false
         # modern SVG favicon to use in place of older style .png and .ico files
@@ -143,9 +143,9 @@ enableEmoji = true
           # URL of avatar shown in home page
           avatarURL = ""
           # title shown in home page (HTML format is supported)
-          title = ""
+          title = "Open source, automation, and tinkering."
           # subtitle shown in home page
-          subtitle = ""
+          subtitle = "(and maybe a hair of crackpot philosophy)"
           # whether to use typeit animation for subtitle
           typeit = false
           # whether to show social links
