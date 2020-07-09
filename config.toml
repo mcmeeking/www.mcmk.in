@@ -533,10 +533,7 @@ enableEmoji = true
         # someCSS = "some.css"
         # located in "assets/" 位于 "assets/"
         # Or 或者
-        Fira-Sans = "https://fonts.googleapis.com/css?family=Fira+Sans:200,400,400i,600,900s"
-        Montserrat = "https://fonts.googleapis.com/css?family=Montserrat:300,400i,500,800"
-        Roboto-Mono = "https://fonts.googleapis.com/css?family=Roboto+Mono:300,400i,500,800"
-        Roboto-Slab = "https://fonts.googleapis.com/css?family=Roboto+Slab:300,400i,500,800"
+        Fonts = "https://fonts.googleapis.com/css?family=Montserrat:300,400i,500,800|Fira+Sans:200,400,400i,600,900s|Roboto+Mono:300,400i,500,800|Roboto+Slab:300,400i,500,800"
       [params.page.library.js]
         # typeit = "typeit.min.js"
         # located in "assets/" 位于 "assets/"
