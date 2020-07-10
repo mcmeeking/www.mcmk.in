@@ -22,6 +22,7 @@ authorLink: 'james@mcmk.in'
 hiddenFromHomePage: false
 hiddenFromSearch: false
 featuredImage: 'images/build-your-own-website/featured.jpg'
+featuredImagePreview: 'images/build-your-own-website/featured-preview.jpg'
 draft: false
 ---
 

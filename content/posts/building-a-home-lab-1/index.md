@@ -19,6 +19,7 @@ authorLink: 'james@mcmk.in'
 hiddenFromHomePage: false
 hiddenFromSearch: false
 featuredImage: 'images/building-a-home-lab-1/featured.jpg'
+featuredImagePreview: 'images/building-a-home-lab-1/featured-preview.jpg'
 draft: false
 ---
 
