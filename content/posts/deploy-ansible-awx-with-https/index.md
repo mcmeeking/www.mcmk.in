@@ -12,6 +12,7 @@ tags:
 
 categories:
 - Projects
+
 ProjectLevel: Beginner
 ProjectTime: 10 minute
 subtitle: ''
@@ -19,6 +20,8 @@ author: 'James McMeeking'
 authorLink: 'james@mcmk.in'
 hiddenFromHomePage: false
 hiddenFromSearch: true
+featuredImage: 'images/deploy-ansible-awx-with-https/featured.jpg'
+featuredImagePreview: 'images/deploy-ansible-awx-with-https/featured-preview.jpg'
 draft: false
 ---
 
