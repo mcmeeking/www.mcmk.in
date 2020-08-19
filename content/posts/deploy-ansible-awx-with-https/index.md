@@ -19,7 +19,7 @@ subtitle: ''
 author: 'James McMeeking'
 authorLink: 'james@mcmk.in'
 hiddenFromHomePage: false
-hiddenFromSearch: true
+hiddenFromSearch: false
 featuredImage: 'images/deploy-ansible-awx-with-https/featured.jpg'
 featuredImagePreview: 'images/deploy-ansible-awx-with-https/featured-preview.jpg'
 draft: false
