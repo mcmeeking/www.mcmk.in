@@ -21,8 +21,8 @@ author: 'James McMeeking'
 authorLink: 'james@mcmk.in'
 hiddenFromHomePage: false
 hiddenFromSearch: false
-featuredImage: 'images/build-your-own-website/featured.jpg'
-featuredImagePreview: 'images/build-your-own-website/featured-preview.jpg'
+featuredImage: 'featured.jpg'
+featuredImagePreview: 'featured-preview.jpg'
 draft: false
 ---
 
@@ -44,7 +44,7 @@ In addition to the above, you should also have:
 
 If you don't have an AWS account, you can sign up [here](https://portal.aws.amazon.com/billing/signup#/start). Once that's done head over to your EC2 console [here](https://console.aws.amazon.com/ec2) and click "Launch Instance" then select "Ubuntu Server 18.04 LTS (HVM), SSD Volume Type":
 
-![Ubuntu-18.04-aws-hvm](/images/build-your-own-website/Ubuntu-18.04-aws-hvm.png)
+![Ubuntu-18.04-aws-hvm](images/build-your-own-website/Ubuntu-18.04-aws-hvm.png)
 
 Next, with the t2.micro selected click "Review and Launch", and then "Edit Security Groups". Here we'll change the SSH rule to allow only "My IP" which will populate your current public IP address.
 
@@ -56,7 +56,7 @@ This setting will also prevent you from connecting via SSH from anywhere other t
 
 We'll also add a rule for HTTP, and HTTPS traffic so our webserver can be publicly reached. Just leave the IP ranges for HTTP and HTTPS as 0.0.0.0/0 and ::/0, then click "Review and Launch":
 
-![AWS-security-groups](/images/build-your-own-website/AWS-security-groups.png)
+![AWS-security-groups](images/build-your-own-website/AWS-security-groups.png)
 
 Now click "Launch", and you'll be asked to create a key pair if you've not already created one. You can call it whatever you want, and then download the certificate it generates. This is essentially the keys to your website kingdom, so keep it safe. I'd suggest moving it to your `~/.ssh/` directory and **chmod**'ing so it's only readable by you with something like:
 
@@ -328,7 +328,7 @@ We'll also need an API key for your Cloudflare account to use **certbot** with t
 
 Select "Custom Token" and then use the following settings, making sure to *swap "1.2.3.4" for your AWS public IP*:
 
-![Cloudflare-token-settings](/images/build-your-own-website/Cloudflare-token-settings.png)
+![Cloudflare-token-settings](images/build-your-own-website/Cloudflare-token-settings.png)
 
 Now move onto the summary and create the token, then copy it so we can store it on our AWS box. As with your private key for the AWS box SSH, this needs to be kept as secure as possible as it allows anyone with it to make changes to your DNS records.
 
