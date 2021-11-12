@@ -36,15 +36,6 @@
   fileName = "docs/cv/james.mcmeeking.pdf"
 
 [[plugins]]
-  package = "netlify-plugin-a11y"
-
-    #  all inputs are optional, we just show you the defaults below
-    [plugins.inputs]
-  
-    # required config
-    checkPaths = ['/']
-
-[[plugins]]
 package = "netlify-plugin-checklinks"
 
   [plugins.inputs]
