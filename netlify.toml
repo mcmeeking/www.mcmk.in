@@ -36,12 +36,6 @@
   fileName = "docs/cv/james.mcmeeking.pdf"
   format = "A4"
   printBackground = "true"
-  displayHeaderFooter = "true"
-  [plugins.inputs.margin]
-    top = '2cm'
-    right = '2cm'
-    bottom = '2cm'
-    left = '2cm'
 
 [[plugins]]
   package = "netlify-plugin-a11y"
