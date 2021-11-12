@@ -32,9 +32,9 @@
   fileName = "docs/cv/james.mcmeeking.pdf"
   [plugins.inputs.margin]
     top = '1cm'
-    right = '-4cm'
+    right = '0cm'
     bottom = '1cm'
-    left = '-4cm'
+    left = '0cm'
 
 # Production context: all deploys from the Production branch set in your site’s
 # Branches settings in the UI will inherit these settings.
