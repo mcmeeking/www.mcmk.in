@@ -32,7 +32,7 @@
 [[plugins]]
   package = "netlify-plugin-generate-pdf"
   [plugins.inputs]
-  url="/docs/cv/"
+  url="https://cranky-poincare-61f551.netlify.app/docs/cv/"
   fileName = "docs/cv/james.mcmeeking.pdf"
   format = "A4"
   printBackground = "true"
