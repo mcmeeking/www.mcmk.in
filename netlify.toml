@@ -16,10 +16,6 @@
   command = "hugo"
 
 [[plugins]]
-  # Installs the Lighthouse Build Plugin for all deploy contexts
-  package = "@netlify/plugin-lighthouse"
-
-[[plugins]]
   package = "@algolia/netlify-plugin-crawler"
 
     [plugins.inputs]
@@ -34,6 +30,11 @@
   [plugins.inputs]
   url="https://cranky-poincare-61f551.netlify.app/docs/cv/"
   fileName = "docs/cv/james.mcmeeking.pdf"
+  [plugins.inputs.margin]
+    top = '1cm'
+    right = '-4cm'
+    bottom = '1cm'
+    left = '-4cm'
 
 # Production context: all deploys from the Production branch set in your site’s
 # Branches settings in the UI will inherit these settings.
