@@ -13,7 +13,7 @@
   publish = "public/"
 
   # Default build command.
-  command = "echo 'default context'"
+  command = "hugo"
 
 [[plugins]]
   # Installs the Lighthouse Build Plugin for all deploy contexts
