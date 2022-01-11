@@ -45,6 +45,7 @@
     Strict-Transport-Security = "max-age=63115200; includeSubDomains; preload"
     Referrer-Policy = "no-referrer, strict-origin-when-cross-origin"
     Cross-Origin-Resource-Policy = "same-origin"
+    Set-Cookie = "__Host-c=1; Path=/; HttpOnly; Secure; SameSite=Lax"
     Content-Security-Policy = """
       default-src 'none';
       script-src 'self' https://utteranc.es/client.js
