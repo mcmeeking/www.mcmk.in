@@ -57,7 +57,7 @@
         'sha256-pepoXUTqW6HuN6BxwysJb3DbHQM7l2OiH5LLjaJisXI=';
       style-src 'self' https://fonts.googleapis.com
         'sha256-9HupEqQsOKAA3TMVtaZh8USULhFpwYGuWFk+44sVSgg='
-        'sha256-qVAVKIfmhvbHWP2+zaUdU7vpYMNeO+YwWkd6d9Kw2nY=';
+        'sha256-s79dB8rJ8H5lhtPczpO+/0hQFf8WRnUh8+8iH+BiFQY=';
       object-src 'self';
       base-uri 'self';
       connect-src 'self' https://*.algolia.net;
