@@ -45,7 +45,7 @@
     Strict-Transport-Security = "max-age=63115200; includeSubDomains; preload"
     Referrer-Policy = "no-referrer, strict-origin-when-cross-origin"
     Cross-Origin-Resource-Policy = "same-origin"
-    Content-Security-Policy = " default-src 'none'; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://www.gravatar.com; script-src 'self' 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com/; manifest-src 'self' "
+    Content-Security-Policy = " default-src 'none'; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://www.gravatar.com; script-src 'self' 'unsafe-inline' https://utteranc.es; style-src 'self' https://fonts.googleapis.com/; manifest-src 'self'; connect-src 'self'"
 
 # Production context: all deploys from the Production branch set in your site’s
 # Branches settings in the UI will inherit these settings.
