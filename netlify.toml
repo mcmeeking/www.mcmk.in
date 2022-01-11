@@ -20,7 +20,7 @@
 
     [plugins.inputs]
     branches = ['main']
-    disabled = true
+    disabled = false
     pathPrefix = "/posts"
     customDomain = "www.mcmk.in"
     renderJavaScript = true
