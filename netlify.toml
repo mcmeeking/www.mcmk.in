@@ -46,6 +46,8 @@
     Referrer-Policy = "no-referrer, strict-origin-when-cross-origin"
     Cross-Origin-Resource-Policy = "same-origin"
     Set-Cookie = "__Host-c=1; Path=/; HttpOnly; Secure; SameSite=Lax"
+    Permissions-Policy = "geolocation=(), microphone=()"
+    Expect-CT = "enforce, max-age=30, report-uri=https://mcmeeking.report-uri.com/r/d/ct/enforce"
     Content-Security-Policy = """
       default-src 'none';
       script-src 'self' https://utteranc.es/client.js
