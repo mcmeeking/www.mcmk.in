@@ -58,7 +58,7 @@
       connect-src 'self' https://*.algolia.net;
       font-src 'self' https://fonts.gstatic.com;
       frame-src 'self' https://utteranc.es;
-      img-src 'self' https://www.gravatar.com;
+      img-src 'self' https://www.gravatar.com https://app.fossa.io https://img.shields.io;
       manifest-src 'self';
       media-src 'self';
       report-uri https://mcmeeking.report-uri.com/r/d/csp/wizard;
