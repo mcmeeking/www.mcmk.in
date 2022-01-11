@@ -27,21 +27,14 @@ license: ""
   header {
     display: none !important;
   }
-
   .search-dropdown {
     display: none !important;
   }
-
   .page {
     padding-top: 0px !important;
   }
-
   footer {
     display: none !important;
-  }
-
-  p, ul, li, {
-    break-inside: avoid !important;
   }
 </style>
 

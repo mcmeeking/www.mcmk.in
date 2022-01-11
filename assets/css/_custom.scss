@@ -15,7 +15,12 @@
     font-family: 'Roboto Mono';
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Montserrat';
 }
 
@@ -80,7 +85,7 @@ html {
     list-style-type: decimal-leading-zero !important;
 }
 
-.col-1 ul > li {
+.col-1 ul>li {
     line-height: 1.5;
     padding: 0.6em;
 }
@@ -90,13 +95,13 @@ html {
     list-style-type: none !important;
 }
 
-.col-2 ul > li {
+.col-2 ul>li {
     text-indent: -2em;
     font-size: 0.85em;
     font-style: italic;
 }
 
-.col-2 ul > li:before {
+.col-2 ul>li:before {
     content: "—  ";
     text-indent: -5px;
 }
@@ -135,4 +140,13 @@ html {
     padding: 1em;
     font-size: 0.85em;
     font-weight: 200;
-} 
+}
+
+@media print {
+    .page {
+        width: 100%;
+    }
+    p,ul,li {
+        break-inside: avoid-page !important;
+    }
+}
