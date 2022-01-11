@@ -173,9 +173,14 @@ html {
         margin-top: -0.4cm;
         font-weight: 400;
     }
-    .col-1,.col-2,.cv-abstract {
+    .cv-abstract {
+        font-weight: 400;
+        font-size: 0.8;
+        line-height: 0.1em;
+    }
+    .col-1,.col-2 {
         font-weight: 400;
         font-size: 0.74em;
-        line-height: 0.1em;
+        line-height: 0em;
     }
 }
