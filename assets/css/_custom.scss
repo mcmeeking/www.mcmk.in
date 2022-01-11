@@ -57,6 +57,7 @@ html {
     font-family: 'Fira sans', sans-serif;
     font-weight: 200;
     font-size: 0.85em;
+    line-height: 1.5;
     display: inline-block;
 }
 
@@ -91,12 +92,12 @@ html {
 }
 
 .col-1 ul>li {
-    line-height: 1.2;
-    padding: 0.6em;
+    line-height: 1.5;
+    padding: 0.3em;
 }
 
 .col-1 p {
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .col-2 ul {
