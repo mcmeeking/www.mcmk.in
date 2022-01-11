@@ -31,9 +31,9 @@
   url="https://cranky-poincare-61f551.netlify.app/docs/cv/"
   fileName = "docs/cv/james.mcmeeking.pdf"
   [plugins.inputs.margin]
-    top = '0cm'
+    top = '0.4cm'
     right = '0cm'
-    bottom = '0cm'
+    bottom = '0.6cm'
     left = '0cm'
 
 [[headers]]
