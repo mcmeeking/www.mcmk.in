@@ -159,6 +159,12 @@ html {
     p,li {
         break-inside: avoid !important;
     }
+    h2 {
+        margin-bottom: 0rem !important;
+    }
+    em {
+        font-weight: 600;
+    }
     .last-update-footer {
         display: block;
         text-align: center;
