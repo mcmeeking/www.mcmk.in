@@ -125,13 +125,11 @@ Initially hired as an IT apprentice to maintain the company website, after a mon
 <div class="col-2-block">
 <span class="cv-sub">FAMILIAR WITH</span>
 
-- GCP
 - Windows Server Sysadmin
 - Ansible & Puppet
 - VMware, HyperV, KVM
 - Containerisation (Docker & Podman)
 - Xquery
-- Go
 
 </div>
 <div class="col-2-block">
