@@ -148,7 +148,7 @@ html {
         width: 100%;
     }
     .cv-head {
-        margin-top: -0.8cm;
+        margin-top: -1cm;
     }
     hr {
         margin-top: -0.6em;
@@ -164,11 +164,13 @@ html {
         text-align: center;
         font-size: 0.72em;
         margin-top: -0.4cm;
+        font-weight: bold;
     }
     .cv-footer {
         font-size: 0.72em;
         text-align: center;
         display: block;
         margin-top: -0.4cm;
+        font-weight: bold;
     }
 }
