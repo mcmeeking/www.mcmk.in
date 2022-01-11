@@ -46,13 +46,13 @@
     Referrer-Policy = "no-referrer, strict-origin-when-cross-origin"
     Cross-Origin-Resource-Policy = "same-origin"
     Content-Security-Policy = """
-      default-src 'self';
+      default-src 'none';
       script-src 'self' https://utteranc.es/client.js
         'sha256-CYXEZK36Ezs8CzmzN55CswoKW0GqxT3ROiF0Jdty9NM='
         'sha256-Im75eFACfZktxSKo/DOTa3L9fqO2ITcvduLbJsjVvyM='
         'sha256-9HupEqQsOKAA3TMVtaZh8USULhFpwYGuWFk+44sVSgg=';
       style-src 'self' https://fonts.googleapis.com;
-      object-src 'none';
+      object-src 'self';
       base-uri 'self';
       connect-src 'self';
       font-src 'self' https://fonts.gstatic.com;
@@ -61,7 +61,7 @@
       manifest-src 'self';
       media-src 'self';
       report-uri https://mcmeeking.report-uri.com/r/d/csp/enforce;
-      worker-src 'none';
+      worker-src 'self';
     """
 
 # Production context: all deploys from the Production branch set in your site’s
