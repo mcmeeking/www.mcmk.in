@@ -39,11 +39,14 @@ html {
     font-weight: bold;
 }
 
+.col-1 h2 {
+    margin-bottom: 0em !important;
+}
+
 .cv-sub {
     font-family: 'Fira Sans';
     font-size: 1.2em;
     margin-top: 1em;
-    margin-bottom: 0em !important;
     display: block;
     font-weight: bold;
 }
@@ -161,7 +164,7 @@ html {
         break-inside: avoid !important;
     }
     em {
-        font-weight: 600;
+        font-weight: bold;
     }
     .last-update-footer {
         display: block;
