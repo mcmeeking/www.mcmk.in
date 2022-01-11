@@ -147,10 +147,13 @@ html {
         display: none !important;
     }
     .page {
-        width: 94%;
+        width: 100%;
     }
     .cv-head {
         margin-top: -0.5cm;
+    }
+    .col-2-block {
+        break-inside: avoid  !important;
     }
     p,li {
         break-inside: avoid !important;
