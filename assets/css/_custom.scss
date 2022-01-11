@@ -147,9 +147,10 @@ html {
         display: none !important;
     }
     .page {
-        width: 92%;
+        width: 86%;
+        margin-top: 0cm;
     }
     p,ul,li {
-        break-inside: avoid-page !important;
+        break-inside: avoid !important;
     }
 }
