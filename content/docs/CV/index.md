@@ -179,4 +179,4 @@ Hobbies are DIY, electronics, and weightlifting. Interests are mixed-martial art
 
 </div>
 </div>
-<hr>
+<div class="cv-footer"><hr>This document was automatically generated. The latest version of this document can be downloaded as a PDF from <a href="https://www.mcmk.in/docs/cv/james.mcmeeking.pdf">here</a>.</div>
