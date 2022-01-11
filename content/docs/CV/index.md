@@ -40,10 +40,8 @@ license: ""
     display: none !important;
   }
 
-  @media (max-width: 960px) {
-    .page {
-      width: 100%;
-    }
+  p, ul, li, {
+    break-inside: avoid !important;
   }
 </style>
 
