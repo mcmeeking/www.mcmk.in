@@ -143,8 +143,11 @@ html {
 }
 
 @media print {
+    header {
+        display: none !important;
+    }
     .page {
-        width: 100%;
+        width: 92%;
     }
     p,ul,li {
         break-inside: avoid-page !important;
