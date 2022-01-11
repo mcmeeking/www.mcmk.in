@@ -47,14 +47,25 @@ license: ""
 <a href="https://github.com/mcmeeking" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github fa-fw"></i></a><a href="https://linkedin.com/in/jmcmeeking91" title="LinkedIn" target="_blank" rel="noopener noreffer me"><i class="fab fa-linkedin fa-fw"></i></a><a href="https://twitter.com/TheGreatMcMeek" title="Twitter" target="_blank" rel="noopener noreffer me"><i class="fab fa-twitter fa-fw"></i></a><a href="https://stackoverflow.com/users/10272933" title="Stack Overflow" target="_blank" rel="noopener noreffer me"><i class="fab fa-stack-overflow fa-fw"></i></a><a href="mailto:james@mcmk.in" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="https://www.mcmk.in/vcard.vcf" title="Phone" target="_blank" rel="noopener noreffer me"><i class="fas fa-phone fa-fw"></i></a>
 </div>
 <div class="cv-abstract">
-Loves learning new things, and is passionate about technology and the open-source philosophy in particular. Has been working in the industry for over 6 years and in that time has developed from an apprentice to a professional services engineer for the UK's largest Apple enterprise service provider. With over a decade of Linux system administration experience, now looking for a more Linux-focused position to move closer to the beating heart of the technological revolution. Primarily enjoys the fast-pace and challenge that the IT industry brings, but is also driven by a desire to improve the world through technology and make a positive difference to peoples’ lives.
+Loves learning new things, and is passionate about technology and the open-source philosophy in particular. Has been working in the industry for over {{% since %}} years and in that time has developed from an apprentice to a systems administrator for the UK's largest medico-legal information provider. Primarily enjoys the fast-pace and challenge that the IT industry brings, but is also driven by a desire to improve the world through technology and make a positive difference to peoples’ lives.
 </div>
 
 <div class="col-1">
 
 ## <span class="cv-sub">Professional Experience</span>
 
-<span class="cv-date">Jul 2018 – Present</span>
+<span class="cv-date">Sep 2020 – Present</span>
+
+*EIDO Healthcare Ltd — IT Administrator*
+
+Oversight and handling of day-to-day IT operations, along with compliance monitoring, uptime assurance, and incident response. Providing support to both internal staff and stakeholders at healthcare organisations from all over the globe, including the NHS, BMI Healthcare, SEHA, and others.
+
+- Ensure all internal services and endpoints are compliant with security policies and frameworks
+- Manage various cloud-hosted services and infrastructure to ensure 99.9% uptime of services
+- Provide detailed documentation internally and externally
+- Develop policies and procedures to ensure IT best-practices are in place at all times
+
+<span class="cv-date">Jul 2018 – Jul 2020</span>
 
 *Jigsaw Systems Ltd — Professional Services Engineer*
 
@@ -105,22 +116,25 @@ Initially hired as an IT apprentice to maintain the company website, after a mon
 
 - Bash & Python
 - Linux & macOS Sysadmin
+- AWS & O365 Admin
 - Jamf/Intune/MDM Admin
 - Virtualisation concepts
 - Config Management
 - CI/CD Concepts
+- OpSec/InfoSec
 - Network Admin and Security
 
 </div>
 <div class="col-2-block">
 <span class="cv-sub">FAMILIAR WITH</span>
 
-- AWS, Azure, GCP
+- GCP
 - Windows Server Sysadmin
-- Ansible and Puppet
+- Ansible & Puppet
 - VMware, HyperV, KVM
 - Containerisation (Docker & Podman)
-- OpSec/InfoSec
+- Xquery
+- Go
 
 </div>
 <div class="col-2-block">
@@ -136,7 +150,7 @@ Initially hired as an IT apprentice to maintain the company website, after a mon
 <div class="col-2-block">
 <span class="cv-sub">CERTIFICATIONS</span>
 
-- RHCSA (currently studying)
+- AWS Certified Professional (currently studying)
 - Apple Certified Support Professional
 - Azure Fundamentals
 - Apple Certified Mac Integrations Associate
@@ -155,6 +169,7 @@ Initially hired as an IT apprentice to maintain the company website, after a mon
 <div class="col-2-block">
 <span class="cv-sub">ACHIEVEMENTS</span>
 
+- Acheived Cyber Essential Plus certification within 6 months of starting a new role
 - Built a self-hosted website compliant with HIPAA, NIST, and PCI-DSS security standards
 - Personally developed and implemented an employee onboarding workflow for a FTSE 250 company
 - Built a business-grade PBX from scratch in two weeks using Asterisk

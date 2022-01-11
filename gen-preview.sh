@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-find ./static/images -mindepth 1 -type d | while read post; do
+find ./static/images -mindepth 1 -type d | while read -r post; do
 	
 	echo "Found post $post"
 
