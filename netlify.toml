@@ -50,9 +50,11 @@
       script-src 'self' https://utteranc.es/client.js
         'sha256-CYXEZK36Ezs8CzmzN55CswoKW0GqxT3ROiF0Jdty9NM='
         'sha256-Im75eFACfZktxSKo/DOTa3L9fqO2ITcvduLbJsjVvyM='
-        'sha256-xJ8Q6L3OjE4Xj5stFYsZKrqcZyWlyryRF8J8oXThvsI=';
+        'sha256-xJ8Q6L3OjE4Xj5stFYsZKrqcZyWlyryRF8J8oXThvsI='
+        'sha256-pepoXUTqW6HuN6BxwysJb3DbHQM7l2OiH5LLjaJisXI=';
       style-src 'self' https://fonts.googleapis.com
-        'sha256-9HupEqQsOKAA3TMVtaZh8USULhFpwYGuWFk+44sVSgg=';
+        'sha256-9HupEqQsOKAA3TMVtaZh8USULhFpwYGuWFk+44sVSgg='
+        'sha256-qVAVKIfmhvbHWP2+zaUdU7vpYMNeO+YwWkd6d9Kw2nY=';
       object-src 'self';
       base-uri 'self';
       connect-src 'self' https://*.algolia.net;
@@ -61,7 +63,7 @@
       img-src 'self' https://www.gravatar.com https://app.fossa.io https://img.shields.io;
       manifest-src 'self';
       media-src 'self';
-      report-uri https://mcmeeking.report-uri.com/r/d/csp/wizard;
+      report-uri https://mcmeeking.report-uri.com/r/d/csp/enforce;
       worker-src 'self';
     """
 
