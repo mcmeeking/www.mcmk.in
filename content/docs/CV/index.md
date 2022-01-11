@@ -39,6 +39,12 @@ license: ""
   footer {
     display: none !important;
   }
+
+  @media (max-width: 960px) {
+    .page {
+      width: 100%;
+    }
+  }
 </style>
 
 # <span class="cv-head">JAMES McMEEKING</span>
