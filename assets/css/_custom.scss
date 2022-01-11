@@ -43,6 +43,7 @@ html {
     font-family: 'Fira Sans';
     font-size: 1.2em;
     margin-top: 1em;
+    margin-bottom: 0em !important;
     display: block;
     font-weight: bold;
 }
@@ -158,9 +159,6 @@ html {
     }
     p,li {
         break-inside: avoid !important;
-    }
-    h2 {
-        margin-bottom: 0rem !important;
     }
     em {
         font-weight: 600;
