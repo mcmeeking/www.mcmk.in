@@ -148,7 +148,7 @@ html {
         width: 100%;
     }
     .cv-head {
-        margin-top: -0.9cm;
+        margin-top: -0.76cm;
     }
     hr {
         margin-top: -0.6em;
@@ -171,6 +171,9 @@ html {
         text-align: center;
         display: block;
         margin-top: -0.4cm;
+        font-weight: 400;
+    }
+    .col-1,.col-2,.cv-abstract {
         font-weight: 400;
     }
 }
