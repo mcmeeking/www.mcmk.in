@@ -51,6 +51,7 @@ Loves learning new things, and is passionate about technology and the open-sourc
 
 ## <span class="cv-sub">Professional Experience</span>
 
+<div class="job">
 <span class="cv-date">Sep 2020 – Present</span>
 
 *EIDO Healthcare Ltd — IT Administrator*
@@ -62,6 +63,8 @@ Oversight and handling of day-to-day IT operations, along with compliance monito
 - Provide detailed documentation internally and externally
 - Develop policies and procedures to ensure IT best-practices are in place at all times
 
+</div>
+<div class="job">
 <span class="cv-date">Jul 2018 – Jul 2020</span>
 
 *Jigsaw Systems Ltd — Professional Services Engineer*
@@ -73,6 +76,8 @@ Site work; primarily project work with some support. Installing and configuring 
 - Compiling documentation on installations and upgrades for use by the service desk
 - Developing automation workflows for onboarding, configuration, management/monitoring, and general admin
 
+</div>
+<div class="job">
 <span class="cv-date">Aug 2017 – Jul 2018</span>
 
 *Jigsaw Systems Ltd — Technical Support Supervisor*
@@ -84,6 +89,8 @@ Lead member of the 1st line support team providing technical oversight and an es
 - Direct escalation point for complex, or high-priority issues
 - Escalation point for troubleshooting of hardware/software issues
 
+</div>
+<div class="job">
 <span class="cv-date">Apr 2015 – Aug 2017</span>
 
 *Jigsaw Systems Ltd — Technical Support Advisor*
@@ -94,6 +101,8 @@ Member of the 1st line support team handling and resolving issues from clients r
 - Assess and escalate issues as and when necessary
 - Represent the company in all communications
 
+</div>
+<div class="job">
 <span class="cv-date">Mar 2014 – Mar 2015</span>
 
 *SASIE Ltd — Systems Administrator (Windows & Linux)*
@@ -104,6 +113,7 @@ Initially hired as an IT apprentice to maintain the company website, after a mon
 - Handle patching and backup of client machines and PBX server
 - Occasionally sent to customer sites to support installations team with IT issues
 
+</div>
 </div>
 <div class="vl">
 </div>

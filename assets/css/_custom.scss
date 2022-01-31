@@ -173,6 +173,9 @@ html {
     em {
         font-weight: bold;
     }
+    .job {
+        break-inside: avoid !important;
+    }
     .last-update-footer {
         display: block;
         text-align: center;
