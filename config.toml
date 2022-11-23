@@ -160,7 +160,7 @@ enableEmoji = true
       # Social config in home page
       [languages.en.params.social]
         GitHub = "mcmeeking"
-        Linkedin = "jmcmeeking91"
+        Linkedin = "mcmeeking"
         Twitter = "TheGreatMcMeek"
         Instagram = ""
         Facebook = ""

@@ -55,6 +55,7 @@
         'sha256-Im75eFACfZktxSKo/DOTa3L9fqO2ITcvduLbJsjVvyM='
         'sha256-xJ8Q6L3OjE4Xj5stFYsZKrqcZyWlyryRF8J8oXThvsI='
         'sha256-pepoXUTqW6HuN6BxwysJb3DbHQM7l2OiH5LLjaJisXI='
+        'sha256-WIdwzI/095eqwbyJhRCsmc1q82vSC8LnJ/Wj+VGMNpI='
         https://cdn.jsdelivr.net/npm/algoliasearch@4.13.0/dist/algoliasearch-lite.umd.min.js
         https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js
         https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js
