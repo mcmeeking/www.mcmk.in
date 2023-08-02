@@ -47,7 +47,6 @@
     Cross-Origin-Resource-Policy = "same-origin"
     Set-Cookie = "__Host-c=1; Path=/; HttpOnly; Secure; SameSite=Lax"
     Permissions-Policy = "geolocation=(), microphone=()"
-    Expect-CT = "enforce, max-age=30, report-uri=https://mcmeeking.report-uri.com/r/d/ct/enforce"
     Content-Security-Policy = """
       default-src 'none';
       script-src 'self' https://utteranc.es/client.js
@@ -56,29 +55,19 @@
         'sha256-xJ8Q6L3OjE4Xj5stFYsZKrqcZyWlyryRF8J8oXThvsI='
         'sha256-pepoXUTqW6HuN6BxwysJb3DbHQM7l2OiH5LLjaJisXI='
         'sha256-WIdwzI/095eqwbyJhRCsmc1q82vSC8LnJ/Wj+VGMNpI='
-        https://cdn.jsdelivr.net/npm/algoliasearch@4.13.0/dist/algoliasearch-lite.umd.min.js
-        https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js
-        https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js
-        https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js
-        https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/copy-tex.min.js
-        https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/mhchem.min.js
-        https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js
-        https://cdn.jsdelivr.net/npm/lazysizes@5.3.1/lazysizes.min.js
-        https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js;
+        https://cdn.jsdelivr.net
+        https://*.cloudfront.net;
       style-src 'self' https://fonts.googleapis.com
         'sha256-9HupEqQsOKAA3TMVtaZh8USULhFpwYGuWFk+44sVSgg='
         'sha256-9Ho0iVW22YiA0BIjtsuozF1bT7cakc6QnCGwBkMChz8='
-        https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/
-        https://cdn.jsdelivr.net/npm/animate.css@4.1.1/
-        https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/
-        https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/
-        https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/;
+        https://cdn.jsdelivr.net
+        https://*.cloudfront.net;
       object-src 'self';
       base-uri 'self';
       connect-src 'self' https://*.algolia.net;
       font-src 'self' https://cdn.jsdelivr.net https://fonts.gstatic.com;
       frame-src 'self' https://utteranc.es;
-      img-src 'self' https://www.gravatar.com https://app.fossa.io https://img.shields.io;
+      img-src 'self' https://www.gravatar.com https://*.cloudfront.net https://app.fossa.io https://img.shields.io;
       manifest-src 'self';
       media-src 'self';
       report-uri https://mcmeeking.report-uri.com/r/d/csp/enforce;
