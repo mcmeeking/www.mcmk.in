@@ -15,8 +15,8 @@
     "dev": "hugo server --buildDrafts --buildFuture --disableFastRender"
   },
   "dependencies": {
-    "@tinacms/cli": "^1.5.14",
-    "tinacms": "^1.5.6"
+    "@tinacms/cli": "^0.60.5",
+    "tinacms": "^2.1.1"
   },
   "devDependencies": {
     "netlify-plugin-a11y": "^0.0.12",
