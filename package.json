@@ -10,7 +10,6 @@
   },
   "homepage": "https://www.mcmk.in",
   "scripts": {
-    "postinstall": "hugo-cli install",
     "new:post": "hugo new post",
     "build": "hugo --gc --minify",
     "graph": "hugo mod graph",
