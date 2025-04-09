@@ -15,8 +15,6 @@
   # Default build command.
   command = "hugo"
 
-  ignoreErrors = ["error-output-taxonomy"]
-
 [[plugins]]
   package = "@algolia/netlify-plugin-crawler"
 
