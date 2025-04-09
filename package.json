@@ -16,9 +16,6 @@
     "hugo": "hugo",
     "dev": "hugo server --buildDrafts --buildFuture --disableFastRender"
   },
-  "dependencies": {
-    "hugo-cli": "^0.14.0"
-  },
   "devDependencies": {
     "netlify-plugin-a11y": "^0.0.12",
     "netlify-plugin-checklinks": "^4.1.1",
