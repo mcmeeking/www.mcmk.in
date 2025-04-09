@@ -10,7 +10,7 @@
   },
   "homepage": "https://www.mcmk.in",
   "scripts": {
-    "new:post": "hugo "
+    "new:post": "hugo new post",
     "build": "hugo --gc --minify",
     "dev": "hugo server --buildDrafts --buildFuture --disableFastRender"
   },
