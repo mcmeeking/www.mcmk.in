@@ -17,7 +17,7 @@
     "dev": "hugo server --buildDrafts --buildFuture --disableFastRender"
   },
   "dependencies": {
-    "@tinacms/cli": "^0.60.5",
+    "@tinacms/cli": "^0.60.28",
     "hugo-cli": "^0.14.0",
     "tinacms": "^2.1.1"
   },
