@@ -1,4 +1,23 @@
 {
+  "name": "www.mcmk.in",
+  "private": true,
+  "description": "Personal blog/website",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcmeeking/www.mcmk.in.git"
+  },
+  "homepage": "https://www.mcmk.in",
+  "scripts": {
+    "new:post": "hugo "
+    "build": "hugo --gc --minify",
+    "dev": "hugo server --buildDrafts --buildFuture --disableFastRender"
+  },
+  "dependencies": {
+    "@tinacms/cli": "^1.5.14",
+    "tinacms": "^1.5.6"
+  },
   "devDependencies": {
     "netlify-plugin-a11y": "^0.0.12",
     "netlify-plugin-checklinks": "^4.1.1",
