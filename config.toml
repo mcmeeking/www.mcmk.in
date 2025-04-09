@@ -36,7 +36,7 @@ enableEmoji = true
 
 # ignore some build errors
 # 忽略一些构建错误
-ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
+ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken", "error-output-taxonomy"]
 
 # Pagination config
 # 分页配置
