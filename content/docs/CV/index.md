@@ -36,6 +36,10 @@ license: ""
   footer {
     display: none !important;
   }
+  @page {
+    size: A4;
+    margin: 1.2cm 1cm 1.8cm 1cm;
+  }
 </style>
 
 # <span class="cv-head">JAMES McMEEKING</span>

@@ -151,11 +151,6 @@ html {
   font-weight: 200;
 }
 
-@page {
-  size: A4;
-  margin: 1.2cm 1cm 1.8cm 1cm;
-}
-
 @media print {
   header {
     display: none !important;

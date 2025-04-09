@@ -157,9 +157,9 @@ copyright = "Permission is hereby granted, free of charge, to any person obtaini
     # whether to use the absolute URL based on the baseURL in search index
     absoluteURL = false
     [params.search.algolia]
-      index = "index.en"
-      appID = "TRBF7WXK9K"
-      searchKey = "b7dab4df8a3d9e1a8f1ca5ab9a01da3a"
+      index = "netlify_718f0db3-34cd-4ccc-b810-c5f34f6ce6cc_master_all"
+      appID = "WCS3B2Z3GL"
+      searchKey = "b40458147f0c31cd9368bcef11226373"
   # Home page config
   [params.home]
     # amount of RSS pages
