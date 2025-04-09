@@ -38,7 +38,7 @@ license: ""
   }
   @page {
     size: A4;
-    margin: 1.2cm 1cm 1.8cm 1cm;
+    margin: 1cm 0.8cm 1.2cm 0.8cm;
   }
   @media print {
   header {
