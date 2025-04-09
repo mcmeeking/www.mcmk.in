@@ -40,6 +40,56 @@ license: ""
     size: A4;
     margin: 1.2cm 1cm 1.8cm 1cm;
   }
+  @media print {
+  header {
+    display: none !important;
+  }
+  .page {
+    width: 100%;
+  }
+  .cv-head {
+    margin-top: -0.72cm;
+  }
+  hr {
+    margin-top: -0.6em;
+  }
+  .col-2-block {
+    break-inside: avoid !important;
+  }
+  p,
+  li {
+    break-inside: avoid !important;
+  }
+  em {
+    font-weight: bold;
+  }
+  .job {
+    break-inside: avoid !important;
+  }
+  .last-update-footer {
+    display: block;
+    text-align: center;
+    font-size: 0.7em;
+    margin-top: -0.4cm;
+    font-weight: 400;
+  }
+  .cv-footer {
+    font-size: 0.7em;
+    text-align: center;
+    display: block;
+    margin-top: -0.4cm;
+    font-weight: 400;
+  }
+  .cv-abstract {
+    font-weight: 400;
+    font-size: 0.8em;
+  }
+  .col-1,
+  .col-2 {
+    font-weight: 400;
+    font-size: 0.74em;
+  }
+}
 </style>
 
 # <span class="cv-head">JAMES McMEEKING</span>
@@ -58,7 +108,7 @@ Loves learning new things, and is passionate about technology and the open-sourc
 <div class="job">
 <span class="cv-date">Apr 2023 - Present</span>
 
-*EIDO Healthcare Ltd — IT Administrator*
+_EIDO Healthcare Ltd — IT Administrator_
 
 Administration, architecture, development, deployment, and maintenance/support of both internal and customer-facing systems. Design and implementation of automated testing and deployment workflows of infrastructure and applications deployed to AWS using enterprise-grade tooling (Terraform, CircleCI/Github Actions, Kubernetes/ECS). Maintained oversight and management of internal endpoints as a secondary role, but shifted focus towards devops/platform engineering day to day.
 
@@ -71,7 +121,7 @@ Administration, architecture, development, deployment, and maintenance/support o
 <div class="job">
 <span class="cv-date">Sep 2020 – Apr 2023</span>
 
-*EIDO Healthcare Ltd — IT Administrator*
+_EIDO Healthcare Ltd — IT Administrator_
 
 Oversight and handling of day-to-day IT operations, along with compliance monitoring, uptime assurance, and incident response. Providing support to both internal staff and stakeholders at healthcare organisations from all over the globe, including the NHS, BMI Healthcare, SEHA, and others.
 
@@ -84,9 +134,9 @@ Oversight and handling of day-to-day IT operations, along with compliance monito
 <div class="job">
 <span class="cv-date">Jul 2018 – Jul 2020</span>
 
-*Jigsaw Systems Ltd — Professional Services Engineer*
+_Jigsaw Systems Ltd — Professional Services Engineer_
 
-Site work; primarily project work with some support. Installing and configuring hardware and applications for customers of Jigsaw24, and providing technical advice and assistance for both external and internal jobs. Work with a *vast* array of technologies including Ubuntu, CentOS, macOS, Windows Server, Azure, AWS, Jamf, Intune, Cisco, Sonicwall, and more. Regularly develop admin and management workflows for mid-sized estates (500-2,000 client machines), and often work with large (2,000-10,000+ client) sites.
+Site work; primarily project work with some support. Installing and configuring hardware and applications for customers of Jigsaw24, and providing technical advice and assistance for both external and internal jobs. Work with a _vast_ array of technologies including Ubuntu, CentOS, macOS, Windows Server, Azure, AWS, Jamf, Intune, Cisco, Sonicwall, and more. Regularly develop admin and management workflows for mid-sized estates (500-2,000 client machines), and often work with large (2,000-10,000+ client) sites.
 
 - Install, support, and configure servers, workstations, NAS arrays, mobile devices, etc.
 - Technical design and scoping of upcoming projects, and liaising with customers
@@ -97,7 +147,7 @@ Site work; primarily project work with some support. Installing and configuring 
 <div class="job">
 <span class="cv-date">Aug 2017 – Jul 2018</span>
 
-*Jigsaw Systems Ltd — Technical Support Supervisor*
+_Jigsaw Systems Ltd — Technical Support Supervisor_
 
 Lead member of the 1st line support team providing technical oversight and an escalation point to team members. Provided support for the entire range of Jigsaw24's product catalogue, ranging from iPhones/iPads, to pro-audio solutions from AVID, pro-video solutions from BlackMagic, and networking, attached storage, and client machines for SMB's, enterprise, and consumer customers alike.
 
@@ -110,7 +160,7 @@ Lead member of the 1st line support team providing technical oversight and an es
 <div class="job">
 <span class="cv-date">Apr 2015 – Aug 2017</span>
 
-*Jigsaw Systems Ltd — Technical Support Advisor*
+_Jigsaw Systems Ltd — Technical Support Advisor_
 
 Member of the 1st line support team handling and resolving issues from clients ranging from multinational corporations and household names, to members of the public.
 
@@ -122,7 +172,7 @@ Member of the 1st line support team handling and resolving issues from clients r
 <div class="job">
 <span class="cv-date">Mar 2014 – Mar 2015</span>
 
-*SASIE Ltd — Systems Administrator (Windows & Linux)*
+_SASIE Ltd — Systems Administrator (Windows & Linux)_
 
 Initially hired as an IT apprentice to maintain the company website, after a month was made responsible for office IT management and then full systems administration after spearheading an office move from managed-space to a dedicated corporate office building. Managed a small handful of Windows 7 client machines, and built and managed a business-grade PBX using an Ubuntu server and the open-source PBX package [Asterisk](https://www.asterisk.org/).
 
@@ -138,19 +188,16 @@ Initially hired as an IT apprentice to maintain the company website, after a mon
 <div class="col-2-block">
 <span class="cv-sub">FLUENT IN</span>
 
-- Scripting (Python, Bash, ZSH)
+- Scripting (Python, Bash)
 - Terraform
-- Containerisation (Docker & Kubernetes)
+- Docker (ECS, Kubernetes)
 - Git & GitHub/GitLab
 - Linux & macOS Sysadmin
 - AWS & O365 Admin
-- Virtualisation concepts
-- Config Management
 - Ansible, Puppet, Chef
-- CI/CD (GitHub Actions, CircleCI, Jenkins)
+- CI/CD (GitHub Actions, CircleCI)
 - OpSec/InfoSec
-- Compliance (Cyber Essentials, NIST, PCI-DSS, HIPAA)
-- Network Admin and Security
+- Compliance (Cyber Essentials, NIST)
 
 </div>
 <div class="col-2-block">
@@ -158,14 +205,10 @@ Initially hired as an IT apprentice to maintain the company website, after a mon
 
 - AI/ML Concepts
 - Azure/GCP Admin
-- VMware, HyperV, KVM
 - Jamf/Intune/MDM Admin
-- NoSQL Databases
-- PostgreSQL, MySQL, SQLite
-- Web Development (HTML, CSS, JS)
+- PostgreSQL, MySQL, NoSQL
 - NodeJS, React, Vue
-- Modern programming languages (Go, Rust)
-- Xquery/XSLT
+- Modern programming (Go, Rust)
 
 </div>
 <div class="col-2-block">
@@ -174,7 +217,6 @@ Initially hired as an IT apprentice to maintain the company website, after a mon
 - Automation
 - Open Source Solutions
 - Mesh Networking
-- Distributed Computing
 - ML/AI Solutions
 
 </div>
