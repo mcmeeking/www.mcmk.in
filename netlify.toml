@@ -15,9 +15,6 @@
   # Default build command.
   command = "npm run build"
 
-  [build.environment]
-    HUGO_VERSION = "0.145.0/extended"
-
 [[plugins]]
   package = "@algolia/netlify-plugin-crawler"
 
