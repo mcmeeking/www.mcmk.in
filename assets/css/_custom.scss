@@ -4,15 +4,15 @@
 // ==============================
 
 .green {
-    color: #029453;
+  color: #029453;
 }
 
 .hidden-data {
-    display: none;
+  display: none;
 }
 
 .header-title {
-    font-family: 'Roboto Mono';
+  font-family: "Roboto Mono";
 }
 
 h1,
@@ -21,181 +21,188 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 html {
-    font-family: 'Fira Sans';
+  font-family: "Fira Sans";
 }
 
 .cv-head {
-    font-family: 'Fira Sans';
-    text-align: center;
-    font-size: 1.7em;
-    margin-top: 0.5em;
-    margin-bottom: 0.8em;
-    line-height: 1.1;
-    display: block;
-    font-weight: bold;
+  font-family: "Fira Sans";
+  text-align: center;
+  font-size: 1.7em;
+  margin-top: 0.5em;
+  margin-bottom: 0.8em;
+  line-height: 1.1;
+  display: block;
+  font-weight: bold;
 }
 
 .col-1 h2 {
-    margin-bottom: 0em !important;
+  margin-bottom: 0em !important;
 }
 
 .cv-sub {
-    font-family: 'Fira Sans';
-    font-size: 1.2em;
-    margin-top: 1em;
-    margin-bottom: 0em !important;
-    display: block;
-    font-weight: bold;
+  font-family: "Fira Sans";
+  font-size: 1.2em;
+  margin-top: 1em;
+  margin-bottom: 0em !important;
+  display: block;
+  font-weight: bold;
 }
 
 .cv-abstract {
-    text-align: left;
-    font-family: 'Fira sans', sans-serif;
-    font-weight: 200;
-    font-size: 0.85em;
-    line-height: 1.6;
-    display: inline-block;
+  text-align: left;
+  font-family: "Fira sans", sans-serif;
+  font-weight: 200;
+  font-size: 0.85em;
+  line-height: 1.6;
+  display: inline-block;
 }
 
 .col-1 {
-    width: 64%;
-    font-weight: 200;
-    font-size: 0.85em;
-    display: inline-block;
+  width: 64%;
+  font-weight: 200;
+  font-size: 0.85em;
+  display: inline-block;
 }
 
 .vl {
-    display: inline-block;
-    width: 8%;
+  display: inline-block;
+  width: 8%;
 }
 
 .col-2 {
-    width: 29%;
-    font-weight: 200;
-    font-size: 0.85em;
-    display: inline-block;
-    position: absolute;
-    margin-top: 0.6rem;
+  width: 29%;
+  font-weight: 200;
+  font-size: 0.85em;
+  display: inline-block;
+  position: absolute;
+  margin-top: 0.6rem;
 }
 
 .col-2-block {
-    display: inline;
+  display: inline;
 }
 
 .col-1 ul {
-    margin: 0;
-    list-style-type: decimal-leading-zero !important;
+  margin: 0;
+  list-style-type: decimal-leading-zero !important;
 }
 
-.col-1 ul>li {
-    line-height: 1.6;
-    padding: 0.46em;
+.col-1 ul > li {
+  line-height: 1.6;
+  padding: 0.46em;
 }
 
 .col-1 p {
-    line-height: 1.7;
+  line-height: 1.7;
 }
 
 .col-2 ul {
-    margin: 0;
-    list-style-type: none !important;
+  margin: 0;
+  list-style-type: none !important;
 }
 
-.col-2 ul>li {
-    text-indent: -2em;
-    font-size: 0.85em;
-    font-style: italic;
+.col-2 ul > li {
+  text-indent: -2em;
+  font-size: 0.85em;
+  font-style: italic;
 }
 
-.col-2 ul>li:before {
-    content: "—  ";
-    text-indent: -5px;
+.col-2 ul > li:before {
+  content: "—  ";
+  text-indent: -5px;
 }
 
 .cv-date {
-    display: block;
-    margin-bottom: -1.8em;
-    font-size: 0.8em;
-    line-height: 3;
-    font-style: italic;
+  display: block;
+  margin-bottom: -1.8em;
+  font-size: 0.8em;
+  line-height: 3;
+  font-style: italic;
 }
 
 .cv-contact-block {
-    display: block;
-    text-align: center;
-    margin-top: -1em;
-    margin-bottom: 0.6em;
-    font-size: 2em;
+  display: block;
+  text-align: center;
+  margin-top: -1em;
+  margin-bottom: 0.6em;
+  font-size: 2em;
 }
 
 .cv-contact-block a {
-    color: inherit !important;
+  color: inherit !important;
 }
 
 .cv-footer {
-    font-size: 0.85em;
-    font-weight: 200;
-    text-align: center;
-    display: block;
+  font-size: 0.85em;
+  font-weight: 200;
+  text-align: center;
+  display: block;
 }
 
 .last-update-footer {
-    display: block;
-    text-align: center;
-    padding: 1em;
-    font-size: 0.85em;
-    font-weight: 200;
+  display: block;
+  text-align: center;
+  padding: 1em;
+  font-size: 0.85em;
+  font-weight: 200;
+}
+
+@page {
+  size: A4;
+  margin: 1.2cm 1cm 1.8cm 1cm;
 }
 
 @media print {
-    header {
-        display: none !important;
-    }
-    .page {
-        width: 100%;
-    }
-    .cv-head {
-        margin-top: -0.72cm;
-    }
-    hr {
-        margin-top: -0.6em;
-    }
-    .col-2-block {
-        break-inside: avoid  !important;
-    }
-    p,li {
-        break-inside: avoid !important;
-    }
-    em {
-        font-weight: bold;
-    }
-    .job {
-        break-inside: avoid !important;
-    }
-    .last-update-footer {
-        display: block;
-        text-align: center;
-        font-size: 0.70em;
-        margin-top: -0.4cm;
-        font-weight: 400;
-    }
-    .cv-footer {
-        font-size: 0.70em;
-        text-align: center;
-        display: block;
-        margin-top: -0.4cm;
-        font-weight: 400;
-    }
-    .cv-abstract {
-        font-weight: 400;
-        font-size: 0.8em;
-    }
-    .col-1,.col-2 {
-        font-weight: 400;
-        font-size: 0.74em;
-    }
+  header {
+    display: none !important;
+  }
+  .page {
+    width: 100%;
+  }
+  .cv-head {
+    margin-top: -0.72cm;
+  }
+  hr {
+    margin-top: -0.6em;
+  }
+  .col-2-block {
+    break-inside: avoid !important;
+  }
+  p,
+  li {
+    break-inside: avoid !important;
+  }
+  em {
+    font-weight: bold;
+  }
+  .job {
+    break-inside: avoid !important;
+  }
+  .last-update-footer {
+    display: block;
+    text-align: center;
+    font-size: 0.7em;
+    margin-top: -0.4cm;
+    font-weight: 400;
+  }
+  .cv-footer {
+    font-size: 0.7em;
+    text-align: center;
+    display: block;
+    margin-top: -0.4cm;
+    font-weight: 400;
+  }
+  .cv-abstract {
+    font-weight: 400;
+    font-size: 0.8em;
+  }
+  .col-1,
+  .col-2 {
+    font-weight: 400;
+    font-size: 0.74em;
+  }
 }

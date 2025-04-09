@@ -29,15 +29,11 @@
     renderJavaScript = true
 
 [[plugins]]
-  package = "netlify-plugin-generate-pdf"
-  [plugins.inputs]
-  url="https://cranky-poincare-61f551.netlify.app/docs/cv/"
-  fileName = "docs/cv/james.mcmeeking.pdf"
-  [plugins.inputs.margin]
-    top = '1.2cm'
-    right = '1cm'
-    bottom = '1.8cm'
-    left = '1cm'
+  package = "/plugins/netlify-plugin-princexml-pdf"
+
+    [plugins.inputs]
+    url = "https://cranky-poincare-61f551.netlify.app/docs/cv/"
+    fileName = "docs/cv/james.mcmeeking.pdf"
 
 [[headers]]
   for = "/*"
