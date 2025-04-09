@@ -58,6 +58,8 @@
         'sha256-xJ8Q6L3OjE4Xj5stFYsZKrqcZyWlyryRF8J8oXThvsI='
         'sha256-pepoXUTqW6HuN6BxwysJb3DbHQM7l2OiH5LLjaJisXI='
         'sha256-WIdwzI/095eqwbyJhRCsmc1q82vSC8LnJ/Wj+VGMNpI='
+        'sha256-iuCbDL1qhIKgxvckejwwHhxDZbgudAXw93q4uDxiRzg='
+        'sha256-7mK5zXadiHEeXBhAVpt9KHe5ExFkouyy+daBgCVFLWw='
         https://cdn.jsdelivr.net
         https://*.cloudfront.net;
       style-src 'self' https://fonts.googleapis.com

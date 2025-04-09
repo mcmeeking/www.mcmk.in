@@ -41,10 +41,10 @@ license: ""
 # <span class="cv-head">JAMES McMEEKING</span>
 
 <div class="cv-contact-block">
-<a href="https://github.com/mcmeeking" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github fa-fw"></i></a><a href="https://linkedin.com/in/mcmeeking" title="LinkedIn" target="_blank" rel="noopener noreffer me"><i class="fab fa-linkedin fa-fw"></i></a><a href="https://twitter.com/TheGreatMcMeek" title="Twitter" target="_blank" rel="noopener noreffer me"><i class="fab fa-twitter fa-fw"></i></a><a href="https://stackoverflow.com/users/10272933" title="Stack Overflow" target="_blank" rel="noopener noreffer me"><i class="fab fa-stack-overflow fa-fw"></i></a><a href="mailto:james@mcmk.in" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="https://www.mcmk.in/vcard.vcf" title="Phone" target="_blank" rel="noopener noreffer me"><i class="fas fa-phone fa-fw"></i></a>
+<a href="https://github.com/mcmeeking" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github fa-fw"></i></a><a href="https://linkedin.com/in/mcmeeking" title="LinkedIn" target="_blank" rel="noopener noreffer me"><i class="fab fa-linkedin fa-fw"></i></a><a href="https://stackoverflow.com/users/10272933" title="Stack Overflow" target="_blank" rel="noopener noreffer me"><i class="fab fa-stack-overflow fa-fw"></i></a><a href="mailto:james@mcmk.in" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="https://www.mcmk.in/vcard.vcf" title="Phone" target="_blank" rel="noopener noreffer me"><i class="fas fa-phone fa-fw"></i></a>
 </div>
 <div class="cv-abstract">
-Loves learning new things, and is passionate about technology and the open-source philosophy in particular. Has been working in the industry for over {{% since %}} years and in that time has developed from an apprentice to a systems administrator for the UK's largest medico-legal information provider. Primarily enjoys the fast-pace and challenge that the IT industry brings, but is also driven by a desire to improve the world through technology and make a positive difference to peoples’ lives.
+Loves learning new things, and is passionate about technology and the open-source philosophy in particular. Has been working in the industry for over {{% since %}} years and in that time has developed from an apprentice to a systems engineer (and technical problem-solver) for the UK's largest medico-legal information provider. Primarily enjoys the fast-pace and challenge that the IT industry brings, but is also driven by a desire to improve the world through technology and make a positive difference to peoples’ lives.
 </div>
 
 <div class="col-1">
@@ -52,7 +52,20 @@ Loves learning new things, and is passionate about technology and the open-sourc
 ## <span class="cv-sub">Professional Experience</span>
 
 <div class="job">
-<span class="cv-date">Sep 2020 – Present</span>
+<span class="cv-date">Apr 2023 - Present</span>
+
+*EIDO Healthcare Ltd — IT Administrator*
+
+Administration, architecture, development, deployment, and maintenance/support of both internal and customer-facing systems. Design and implementation of automated testing and deployment workflows of infrastructure and applications deployed to AWS using enterprise-grade tooling (Terraform, CircleCI/Github Actions, Kubernetes/ECS). Maintained oversight and management of internal endpoints as a secondary role, but shifted focus towards devops/platform engineering day to day.
+
+- Architect, deploy, and maintain internal and customer-facing infrastructure (hosted in AWS) using Terraform
+- Ensure service reliability for all systems and applications
+- Design and implement CI/CD workflows to ensure rapid and reliable deployment of applications and systems
+- Retain previous responsibilities of IT Administrator, including incident response, compliance monitoring, and uptime assurance
+
+</div>
+<div class="job">
+<span class="cv-date">Sep 2020 – Apr 2023</span>
 
 *EIDO Healthcare Ltd — IT Administrator*
 
@@ -121,25 +134,34 @@ Initially hired as an IT apprentice to maintain the company website, after a mon
 <div class="col-2-block">
 <span class="cv-sub">FLUENT IN</span>
 
-- Bash & Python
+- Scripting (Python, Bash, ZSH)
+- Terraform
+- Containerisation (Docker & Kubernetes)
+- Git & GitHub/GitLab
 - Linux & macOS Sysadmin
 - AWS & O365 Admin
-- Jamf/Intune/MDM Admin
 - Virtualisation concepts
 - Config Management
-- CI/CD Concepts
+- Ansible, Puppet, Chef
+- CI/CD (GitHub Actions, CircleCI, Jenkins)
 - OpSec/InfoSec
+- Compliance (Cyber Essentials, NIST, PCI-DSS, HIPAA)
 - Network Admin and Security
 
 </div>
 <div class="col-2-block">
 <span class="cv-sub">FAMILIAR WITH</span>
 
-- Windows Server Sysadmin
-- Ansible & Puppet
+- AI/ML Concepts
+- Azure/GCP Admin
 - VMware, HyperV, KVM
-- Containerisation (Docker & Podman)
-- Xquery
+- Jamf/Intune/MDM Admin
+- NoSQL Databases
+- PostgreSQL, MySQL, SQLite
+- Web Development (HTML, CSS, JS)
+- NodeJS, React, Vue
+- Modern programming languages (Go, Rust)
+- Xquery/XSLT
 
 </div>
 <div class="col-2-block">
@@ -167,14 +189,15 @@ Initially hired as an IT apprentice to maintain the company website, after a mon
 <span class="cv-sub">EDUCATION</span>
 
 - Level 3 Apprenticeship in IT and Professional Telecoms
-- Nottingham Trent University - Physics (no degree acquired) 
+- Nottingham Trent University - Physics (no degree acquired)
 - A-levels in Physics, Maths, and Chemistry
 
 </div>
 <div class="col-2-block">
 <span class="cv-sub">ACHIEVEMENTS</span>
 
-- Acheived Cyber Essential Plus certification within 6 months of starting a new role
+- Moved from "IT person" to Systems Reliability Engineer and infrastructure architect in 2 years
+- Achieved Cyber Essential Plus certification within 6 months of starting a new role
 - Built a self-hosted website compliant with HIPAA, NIST, and PCI-DSS security standards
 - Personally developed and implemented an employee onboarding workflow for a FTSE 250 company
 - Built a business-grade PBX from scratch in two weeks using Asterisk
@@ -183,7 +206,7 @@ Initially hired as an IT apprentice to maintain the company website, after a mon
 <div class="col-2-block">
 <span class="cv-sub">HOBBIES & INTERESTS</span>
 
-Hobbies are DIY, electronics, and weightlifting. Interests are mixed-martial arts, technology, science, philosophy, and learning.
+Hobbies are DIY, electronics, and weightlifting. Interests are mixed-martial arts, technology, science, philosophy, history, and learning.
 
 </div>
 </div>
