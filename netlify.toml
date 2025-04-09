@@ -52,7 +52,7 @@
     Permissions-Policy = "geolocation=(), microphone=()"
     Content-Security-Policy = """
       default-src 'none';
-      script-src 'self' 'unsafe-hashes'
+      script-src 'self' 'unsafe-inline'
         https://utteranc.es/client.js
         'sha256-CYXEZK36Ezs8CzmzN55CswoKW0GqxT3ROiF0Jdty9NM='
         'sha256-Im75eFACfZktxSKo/DOTa3L9fqO2ITcvduLbJsjVvyM='
