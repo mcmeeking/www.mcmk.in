@@ -19,7 +19,7 @@
   package = "@algolia/netlify-plugin-crawler"
 
     [plugins.inputs]
-    branches = ['master']
+    branches = ['main']
     disabled = false
     pathPrefix = "/posts"
     customDomain = "www.mcmk.in"
