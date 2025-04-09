@@ -12,10 +12,13 @@
   "scripts": {
     "new:post": "hugo new post",
     "build": "hugo --gc --minify",
+    "graph": "hugo mod graph",
+    "hugo": "hugo",
     "dev": "hugo server --buildDrafts --buildFuture --disableFastRender"
   },
   "dependencies": {
     "@tinacms/cli": "^0.60.5",
+    "hugo-cli": "^0.14.0",
     "tinacms": "^2.1.1"
   },
   "devDependencies": {
