@@ -10,7 +10,7 @@
   },
   "homepage": "https://www.mcmk.in",
   "scripts": {
-    "postinstall": "HUGO_VERSION=0.145.0/extended; hugo-cli install",
+    "postinstall": "hugo-cli install",
     "new:post": "hugo new post",
     "build": "hugo --gc --minify",
     "graph": "hugo mod graph",
