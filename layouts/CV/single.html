@@ -1,0 +1,365 @@
+{{- define "content"}}
+<!-- Calculate years of experience -->
+{{ $career_start := 2014 }} <!-- Matches your career start from "Mar 2014" -->
+{{ $current_year := now.Year }}
+{{ $years_since := sub $current_year $career_start }}
+{{ $abstract := .Params.abstract }}
+{{ $abstract := replace $abstract "{{ years_since }}" (print $years_since) }}
+
+<!-- CSS from your original file, unchanged -->
+<style>
+  header {
+    display: none !important;
+  }
+
+  .search-dropdown {
+    display: none !important;
+  }
+
+  .page {
+    padding-top: 0px !important;
+  }
+
+  footer {
+    display: none !important;
+  }
+
+  .contact-link {
+    display: block;
+    height: 10mm;
+    width: 10mm;
+    margin: 0 2mm;
+  }
+
+  .contact-svg {
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+  .cv-contact-block {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: -1em;
+    margin-bottom: 0.6em;
+    font-size: 2em;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+
+  .cv-contact-block a {
+    color: inherit !important;
+  }
+
+  .cv-head {
+    font-family: "Fira Sans";
+    text-align: center;
+    font-size: 3.2rem;
+    margin-top: 0.5em;
+    margin-bottom: 0.8em;
+    line-height: 1.1;
+    display: block;
+  }
+
+  .job {
+    margin-bottom: 1.5em;
+  }
+
+  .col-1 h2 {
+    font-size: 1.7rem;
+    margin-bottom: 0em !important;
+  }
+
+  .cv-sub {
+    font-family: "Fira Sans";
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 0em !important;
+    display: block;
+  }
+
+  .cv-abstract {
+    text-align: left;
+    font-family: "Fira sans", sans-serif;
+    font-weight: 200;
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  .col-1 {
+    width: 64%;
+    font-weight: 200;
+    font-size: 0.85rem;
+    vertical-align: top;
+  }
+
+  .vl {
+    width: 8%;
+  }
+
+  .col-2 {
+    width: 28%;
+    font-weight: 200;
+    font-size: 0.8rem;
+    margin-top: 0.6rem;
+    vertical-align: top;
+  }
+
+  .col-1 ul {
+    margin: 0;
+    margin-left: -0.4em;
+    list-style-type: decimal-leading-zero !important;
+  }
+
+  .col-1 ul>li {
+    line-height: 1.6;
+    font-weight: 900;
+    padding: 0.36em;
+    font-size: 0.74rem;
+  }
+
+  .col-1 p {
+    line-height: 1.7;
+  }
+
+  .col-2 ul {
+    margin: 0;
+    list-style-type: none !important;
+  }
+
+  .col-2 ul>li {
+    text-indent: -2em;
+    font-size: 0.72rem;
+    font-style: italic;
+  }
+
+  .col-2 ul>li:before {
+    content: "—  ";
+    text-indent: -5px;
+  }
+
+  .cv-date {
+    display: block;
+    margin-bottom: -1.8em;
+    font-size: 0.8rem;
+    line-height: 3;
+    font-style: italic;
+  }
+
+  .cv-job-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0.8em 0 0 0;
+  }
+
+  .cv-job-overview {
+    font-size: 0.74rem;
+    margin: 0.2em 0 0.6em 0;
+    line-height: 1.6;
+  }
+
+  .responsibility {
+    font-weight: 200;
+  }
+
+  .cv-body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.6;
+  }
+
+  .hobbies {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .cv-footer {
+    font-size: 0.85em;
+    font-weight: 200;
+    text-align: center;
+    display: block;
+  }
+
+  hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    border: 0;
+    margin: 1rem 0;
+    position: relative;
+    border-top: 1px dashed #f0f0f08f;
+    border-bottom: none;
+  }
+
+  @page {
+    size: A4;
+    margin: 1cm 0.8cm 1.2cm 0.8cm;
+
+    @bottom-center {
+      content: counter(page) " / " counter(pages);
+      font-size: 0.7em;
+      font-family: "Fira Sans";
+      font-weight: 400;
+    }
+  }
+
+  .page {
+    width: 210mm;
+  }
+
+  .contact-logo {
+    height: 10mm;
+    width: auto;
+    max-width: 10mm;
+  }
+
+  .cv-body a,
+  .cv-footer a {
+    text-decoration: underline;
+  }
+
+  @media print {
+    .page {
+      width: 100%;
+    }
+
+    .cv-head {
+      margin-top: -0.32cm;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-weight: 900;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    .col-1 {
+      margin-top: -0.6cm;
+    }
+
+    .col-2 {
+      margin-top: -0.2cm;
+    }
+
+    hr {
+      margin-top: -0.6em;
+    }
+
+    li {
+      margin-left: -0.6rem;
+    }
+
+    .col-2 li {
+      margin-left: -1rem;
+      padding: 0.1em 0;
+    }
+
+    .job {
+      break-inside: avoid;
+    }
+
+    .col-2-block {
+      break-inside: avoid;
+    }
+
+    .last-update-footer {
+      float: bottom;
+      text-align: center;
+      font-size: 0.7em;
+      font-weight: 400;
+    }
+
+    .cv-footer {
+      font-size: 0.7em;
+      text-align: center;
+      float: bottom;
+      margin-top: -1.8cm;
+      padding-bottom: 0.5cm;
+      font-weight: 400;
+    }
+  }
+</style>
+
+<!-- CV Structure -->
+<div id="cv" class="page">
+  <h1 class="cv-head">{{ .Params.author }}</h1>
+  <div class="cv-contact-block">
+    {{ partial "contact-icons.html" . }}
+  </div>
+  <div class="cv-abstract">
+    {{ $abstract | markdownify }}
+  </div>
+
+  <div class="cv-body">
+    <div class="col-1">
+      <h2 class="cv-sub">Professional Experience</h2>
+      {{ range .Params.jobs }}
+      <div class="job">
+        <span class="cv-date">{{ .start }} - {{ .end }}</span>
+        <p class="cv-job-title">{{ .company }} — {{ .title }}</p>
+        {{ if .overview }}
+        <p class="cv-job-overview">{{ .overview | markdownify }}</p>
+        {{ end }}
+        {{ if .responsibilities }}
+        <ul>
+          {{ range .responsibilities }}
+          <li><span class="responsibility">{{ . }}</span></li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+
+    <div class="vl"></div>
+
+    <div class="col-2">
+      {{ range .Params.bullet_lists }}
+      <div class="col-2-block">
+        <h3 class="cv-sub">{{ .name }}</h3>
+        <ul>
+          {{ range .items }}
+          <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+      {{ with .Params.hobbies }}
+      <div class="col-2-block">
+        <h3 class="cv-sub">{{ .name }}</h3>
+        <p class="hobbies">{{ .value | markdownify }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+
+  <div class="cv-footer">
+    <hr>
+    This document was automatically generated. The latest version of this document can be downloaded as a PDF from <a
+      href="https://www.mcmk.in/docs/cv/james.mcmeeking.pdf">here</a>.
+  </div>
+</div>
+
+<span class="last-update-footer">
+  {{- with .Site.Params.dateformat | default "2006-01-02" | .Lastmod.Format -}}
+  {{- dict "Date" . | T "updatedOnDate" -}}
+  {{- if $.Site.Params.gitRepo -}}
+  {{- with $.GitInfo -}}
+  &nbsp;<a class="git-hash" href="{{ printf `%v/commit/%v` $.Site.Params.gitRepo .Hash }}" target="_blank"
+    title="commit by {{ .AuthorName }}({{ .AuthorEmail }}) {{ .Hash }}: {{ .Subject }}">
+    <i class="fas fa-hashtag fa-fw"></i>{{- .AbbreviatedHash -}}
+  </a>
+  {{- end -}}
+  {{- end -}}
+  {{- end -}}
+</span>
+{{- end -}}

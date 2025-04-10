@@ -1,0 +1,7 @@
+{{- with .Params.contact }}
+  {{ range $key, $value := . }}
+    <a href="{{ $value.link }}" title="{{ $key | humanize }}" target="_blank" rel="noopener noreferrer" class="contact-link">
+      {{ partial "svg" (printf "%s" $value.name) }}
+    </a>
+  {{ end }}
+{{ end }}

@@ -1,7 +1,8 @@
 ---
+type: CV
 title: "Curriculum Vitae"
 draft: false
-author: "James McMeeking"
+author: JAMES McMEEKING
 authorLink: ""
 description: ""
 
@@ -21,239 +22,144 @@ math:
   enable: false
 lightgallery: false
 license: ""
+
+abstract: |
+  Loves learning new things, and is passionate about technology and the open-source philosophy in particular. Has been working in the industry for over {{ years_since }} years and in that time has developed from an apprentice to a systems engineer (and technical problem-solver) for the UK's largest medico-legal information provider. Primarily enjoys the fast-pace and challenge that the IT industry brings, but is also driven by a desire to improve the world through technology and make a positive difference to peoples’ lives.
+
+# Contact information
+contact:
+  - name: github
+    link: "https://github.com/mcmeeking"
+    qr_code: "images/qr-codes/github.svg"
+    logo: "images/logos/github.svg"
+  - name: linkedin
+    link: "https://linkedin.com/in/mcmeeking"
+    qr_code: "images/qr-codes/linkedin.svg"
+    logo: "images/logos/linkedin.svg"
+  - name: stack-overflow
+    link: "https://stackoverflow.com/users/10272933"
+    qr_code: "images/qr-codes/stack-overflow.svg"
+    logo: "images/logos/stack-overflow.svg"
+  - name: email
+    link: "mailto:james@mcmk.in"
+    qr_code: "images/qr-codes/email.svg"
+    logo: "images/logos/email.svg"
+  - name: phone
+    link: "https://www.mcmk.in/vcard.vcf"
+    qr_code: "images/qr-codes/phone.svg"
+    logo: "images/logos/phone.svg"
+
+# Professional experience
+jobs:
+  - start: "Apr 2023"
+    end: "Present"
+    company: "EIDO Healthcare Ltd"
+    title: "IT Engineer"
+    overview: |
+      Administration, architecture, development, deployment, and maintenance/support of both internal and customer-facing systems. Design and implementation of automated testing and deployment workflows of infrastructure and applications deployed to AWS using enterprise-grade tooling (Terraform, CircleCI/Github Actions, Kubernetes/ECS). Maintained oversight and management of internal endpoints as a secondary role, but shifted focus towards devops/platform engineering day to day.
+    responsibilities:
+      - Architect, deploy, and maintain internal and customer-facing infrastructure (hosted in AWS) using Terraform
+      - Ensure service reliability for all systems and applications
+      - Design and implement CI/CD workflows to ensure rapid and reliable deployment of applications and systems
+      - Retain previous responsibilities of IT Administrator, including incident response, compliance monitoring, and uptime assurance
+  - start: "Sep 2020"
+    end: "Apr 2023"
+    company: "EIDO Healthcare Ltd"
+    title: "IT Administrator"
+    overview: |
+      Oversight and handling of day-to-day IT operations, along with compliance monitoring, uptime assurance, and incident response. Providing support to both internal staff and stakeholders at healthcare organisations from all over the globe, including the NHS, BMI Healthcare, SEHA, and others.
+    responsibilities:
+      - Ensure all internal services and endpoints are compliant with security policies and frameworks
+      - Manage various cloud-hosted services and infrastructure to ensure 99.9% uptime of services
+      - Provide detailed documentation internally and externally
+      - Develop policies and procedures to ensure IT best-practices are in place at all times
+  - start: "Jul 2018"
+    end: "Jul 2020"
+    company: "Jigsaw Systems Ltd"
+    title: "Professional Services Engineer"
+    overview: |
+      Site work; primarily project work with some support. Installing and configuring hardware and applications for customers of Jigsaw24, and providing technical advice and assistance for both external and internal jobs. Work with a _vast_ array of technologies including Ubuntu, CentOS, macOS, Windows Server, Azure, AWS, Jamf, Intune, Cisco, Sonicwall, and more. Regularly develop admin and management workflows for mid-sized estates (500-2,000 client machines), and often work with large (2,000-10,000+ client) sites.
+    responsibilities:
+      - Install, support, and configure servers, workstations, NAS arrays, mobile devices, etc.
+      - Technical design and scoping of upcoming projects, and liaising with customers
+      - Compiling documentation on installations and upgrades for use by the service desk
+      - Developing automation workflows for onboarding, configuration, management/monitoring, and general admin
+  - start: "Aug 2017"
+    end: "Jul 2018"
+    company: "Jigsaw Systems Ltd"
+    title: "Technical Support Supervisor"
+    overview: |
+      Lead member of the 1st line support team providing technical oversight and an escalation point to team members. Provided support for the entire range of Jigsaw24's product catalogue, ranging from iPhones/iPads, to pro-audio solutions from AVID, pro-video solutions from BlackMagic, and networking, attached storage, and client machines for SMB's, enterprise, and consumer customers alike.
+    responsibilities:
+      - Training and documentation development
+      - Workflow design, optimisation, and deployment through company CRM Salesforce
+      - Direct escalation point for complex, or high-priority issues
+      - Escalation point for troubleshooting of hardware/software issues
+  - start: "Apr 2015"
+    end: "Aug 2017"
+    company: "Jigsaw Systems Ltd"
+    title: "Technical Support Advisor"
+  - start: "Mar 2014"
+    end: "Mar 2015"
+    company: "SASIE Ltd"
+    title: "Systems Administrator (Windows & Linux)"
+
+bullet_lists:
+  - name: FLUENT IN
+    items:
+      - Scripting (Python, Bash, ZSH)
+      - Terraform
+      - Containerisation (Docker, k8s)
+      - Git & GitHub/GitLab
+      - Linux & macOS Sysadmin
+      - AWS & O365 Admin
+      - Virtualisation concepts
+      - Config Management
+      - Ansible, Puppet, Chef
+      - CI/CD (GitHub Actions, CircleCI)
+      - OpSec/InfoSec
+      - Compliance (Cyber Essentials)
+      - Network Admin and Security
+  - name: FAMILIAR WITH
+    items:
+      - AI/ML Concepts
+      - Azure/GCP Admin
+      - VMware, HyperV, KVM
+      - Jamf/Intune/MDM Admin
+      - NoSQL Databases
+      - PostgreSQL, MySQL, SQLite
+      - NodeJS, React, Vue
+      - Modern languages (Go, Rust)
+  - name: INTERESTED IN
+    items:
+      - Open Source Solutions
+      - Automation
+      - Mesh Networking
+      - Distributed Computing
+      - ML/AI Solutions
+  - name: CERTIFICATIONS
+    items:
+      - AWS Certified Professional
+      - Apple Certified Support Professional
+      - Azure Fundamentals
+      - Apple Certified Mac Integrations
+      - Jamf Certified Tech
+      - Basic DBS Check
+  - name: EDUCATION
+    items:
+      - Level 3 Apprenticeship in IT and Professional Telecoms
+      - Nottingham Trent University - Physics (no degree acquired)
+      - A-levels in Physics, Maths, and Chemistry
+  - name: ACHIEVEMENTS
+    items:
+      - Moved from "IT person" to Service Reliability Engineer and infrastructure architect in 2 years
+      - Achieved Cyber Essential Plus certification within 6 months of starting a new role
+      - Built a self-hosted website compliant with HIPAA, NIST, and PCI-DSS security standards
+      - Personally developed and implemented an employee onboarding workflow for a FTSE 250 company
+      - Built a business-grade PBX from scratch in two weeks using Asterisk
+
+hobbies:
+  name: HOBBIES & INTERESTS
+  value: |
+    Hobbies are DIY, electronics, and weightlifting. Interests are mixed-martial arts, technology, science, philosophy, history, and learning
 ---
-
-<style>
-  header {
-    display: none !important;
-  }
-  .search-dropdown {
-    display: none !important;
-  }
-  .page {
-    padding-top: 0px !important;
-  }
-  footer {
-    display: none !important;
-  }
-  @page {
-    size: A4;
-    margin: 1cm 0.8cm 1.2cm 0.8cm;
-  }
-  @media print {
-  header {
-    display: none !important;
-  }
-  .page {
-    width: 100%;
-  }
-  .cv-head {
-    margin-top: -0.72cm;
-  }
-  hr {
-    margin-top: -0.6em;
-  }
-  .col-2-block {
-    break-inside: avoid !important;
-  }
-  p,
-  li {
-    break-inside: avoid !important;
-  }
-  em {
-    font-weight: bold;
-  }
-  .job {
-    break-inside: avoid !important;
-  }
-  .last-update-footer {
-    display: block;
-    text-align: center;
-    font-size: 0.7em;
-    margin-top: -0.4cm;
-    font-weight: 400;
-  }
-  .cv-footer {
-    font-size: 0.7em;
-    text-align: center;
-    display: block;
-    margin-top: -0.4cm;
-    font-weight: 400;
-  }
-  .cv-abstract {
-    font-weight: 400;
-    font-size: 0.8em;
-  }
-  .col-1,
-  .col-2 {
-    font-weight: 400;
-    font-size: 0.74em;
-  }
-}
-</style>
-
-# <span class="cv-head">JAMES McMEEKING</span>
-
-<div class="cv-contact-block">
-<a href="https://github.com/mcmeeking" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github fa-fw"></i></a><a href="https://linkedin.com/in/mcmeeking" title="LinkedIn" target="_blank" rel="noopener noreffer me"><i class="fab fa-linkedin fa-fw"></i></a><a href="https://stackoverflow.com/users/10272933" title="Stack Overflow" target="_blank" rel="noopener noreffer me"><i class="fab fa-stack-overflow fa-fw"></i></a><a href="mailto:james@mcmk.in" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="https://www.mcmk.in/vcard.vcf" title="Phone" target="_blank" rel="noopener noreffer me"><i class="fas fa-phone fa-fw"></i></a>
-</div>
-<div class="cv-abstract">
-Loves learning new things, and is passionate about technology and the open-source philosophy in particular. Has been working in the industry for over {{% since %}} years and in that time has developed from an apprentice to a systems engineer (and technical problem-solver) for the UK's largest medico-legal information provider. Primarily enjoys the fast-pace and challenge that the IT industry brings, but is also driven by a desire to improve the world through technology and make a positive difference to peoples’ lives.
-</div>
-
-<div class="col-1">
-
-## <span class="cv-sub">Professional Experience</span>
-
-<div class="job">
-<span class="cv-date">Apr 2023 - Present</span>
-
-_EIDO Healthcare Ltd — IT Administrator_
-
-Administration, architecture, development, deployment, and maintenance/support of both internal and customer-facing systems. Design and implementation of automated testing and deployment workflows of infrastructure and applications deployed to AWS using enterprise-grade tooling (Terraform, CircleCI/Github Actions, Kubernetes/ECS). Maintained oversight and management of internal endpoints as a secondary role, but shifted focus towards devops/platform engineering day to day.
-
-- Architect, deploy, and maintain internal and customer-facing infrastructure (hosted in AWS) using Terraform
-- Ensure service reliability for all systems and applications
-- Design and implement CI/CD workflows to ensure rapid and reliable deployment of applications and systems
-- Retain previous responsibilities of IT Administrator, including incident response, compliance monitoring, and uptime assurance
-
-</div>
-<div class="job">
-<span class="cv-date">Sep 2020 – Apr 2023</span>
-
-_EIDO Healthcare Ltd — IT Administrator_
-
-Oversight and handling of day-to-day IT operations, along with compliance monitoring, uptime assurance, and incident response. Providing support to both internal staff and stakeholders at healthcare organisations from all over the globe, including the NHS, BMI Healthcare, SEHA, and others.
-
-- Ensure all internal services and endpoints are compliant with security policies and frameworks
-- Manage various cloud-hosted services and infrastructure to ensure 99.9% uptime of services
-- Provide detailed documentation internally and externally
-- Develop policies and procedures to ensure IT best-practices are in place at all times
-
-</div>
-<div class="job">
-<span class="cv-date">Jul 2018 – Jul 2020</span>
-
-_Jigsaw Systems Ltd — Professional Services Engineer_
-
-Site work; primarily project work with some support. Installing and configuring hardware and applications for customers of Jigsaw24, and providing technical advice and assistance for both external and internal jobs. Work with a _vast_ array of technologies including Ubuntu, CentOS, macOS, Windows Server, Azure, AWS, Jamf, Intune, Cisco, Sonicwall, and more. Regularly develop admin and management workflows for mid-sized estates (500-2,000 client machines), and often work with large (2,000-10,000+ client) sites.
-
-- Install, support, and configure servers, workstations, NAS arrays, mobile devices, etc.
-- Technical design and scoping of upcoming projects, and liaising with customers
-- Compiling documentation on installations and upgrades for use by the service desk
-- Developing automation workflows for onboarding, configuration, management/monitoring, and general admin
-
-</div>
-<div class="job">
-<span class="cv-date">Aug 2017 – Jul 2018</span>
-
-_Jigsaw Systems Ltd — Technical Support Supervisor_
-
-Lead member of the 1st line support team providing technical oversight and an escalation point to team members. Provided support for the entire range of Jigsaw24's product catalogue, ranging from iPhones/iPads, to pro-audio solutions from AVID, pro-video solutions from BlackMagic, and networking, attached storage, and client machines for SMB's, enterprise, and consumer customers alike.
-
-- Training and documentation development
-- Workflow design, optimisation, and deployment through company CRM ([Salesforce](http://www.salesforce.com/))
-- Direct escalation point for complex, or high-priority issues
-- Escalation point for troubleshooting of hardware/software issues
-
-</div>
-<div class="job">
-<span class="cv-date">Apr 2015 – Aug 2017</span>
-
-_Jigsaw Systems Ltd — Technical Support Advisor_
-
-Member of the 1st line support team handling and resolving issues from clients ranging from multinational corporations and household names, to members of the public.
-
-- Comprehensive support for the broad and diverse Jigsaw24 product range
-- Assess and escalate issues as and when necessary
-- Represent the company in all communications
-
-</div>
-<div class="job">
-<span class="cv-date">Mar 2014 – Mar 2015</span>
-
-_SASIE Ltd — Systems Administrator (Windows & Linux)_
-
-Initially hired as an IT apprentice to maintain the company website, after a month was made responsible for office IT management and then full systems administration after spearheading an office move from managed-space to a dedicated corporate office building. Managed a small handful of Windows 7 client machines, and built and managed a business-grade PBX using an Ubuntu server and the open-source PBX package [Asterisk](https://www.asterisk.org/).
-
-- Responsible for management of website, webmail, and hosting
-- Handle patching and backup of client machines and PBX server
-- Occasionally sent to customer sites to support installations team with IT issues
-
-</div>
-</div>
-<div class="vl">
-</div>
-<div class="col-2">
-<div class="col-2-block">
-<span class="cv-sub">FLUENT IN</span>
-
-- Scripting (Python, Bash)
-- Terraform
-- Docker (ECS, Kubernetes)
-- Git & GitHub/GitLab
-- Linux & macOS Sysadmin
-- AWS & O365 Admin
-- Ansible, Puppet, Chef
-- CI/CD (GitHub Actions, CircleCI)
-- OpSec/InfoSec
-- Compliance (Cyber Essentials, NIST)
-
-</div>
-<div class="col-2-block">
-<span class="cv-sub">FAMILIAR WITH</span>
-
-- AI/ML Concepts
-- Azure/GCP Admin
-- Jamf/Intune/MDM Admin
-- PostgreSQL, MySQL, NoSQL
-- NodeJS, React, Vue
-- Modern programming (Go, Rust)
-
-</div>
-<div class="col-2-block">
-<span class="cv-sub">INTERESTED IN</span>
-
-- Automation
-- Open Source Solutions
-- Mesh Networking
-- ML/AI Solutions
-
-</div>
-<div class="col-2-block">
-<span class="cv-sub">CERTIFICATIONS</span>
-
-- AWS Certified Professional (currently studying)
-- Apple Certified Support Professional
-- Azure Fundamentals
-- Apple Certified Mac Integrations Associate
-- Jamf Certified Tech
-- Basic DBS Check
-
-</div>
-<div class="col-2-block">
-<span class="cv-sub">EDUCATION</span>
-
-- Level 3 Apprenticeship in IT and Professional Telecoms
-- Nottingham Trent University - Physics (no degree acquired)
-- A-levels in Physics, Maths, and Chemistry
-
-</div>
-<div class="col-2-block">
-<span class="cv-sub">ACHIEVEMENTS</span>
-
-- Moved from "IT person" to Systems Reliability Engineer and infrastructure architect in 2 years
-- Achieved Cyber Essential Plus certification within 6 months of starting a new role
-- Built a self-hosted website compliant with HIPAA, NIST, and PCI-DSS security standards
-- Personally developed and implemented an employee onboarding workflow for a FTSE 250 company
-- Built a business-grade PBX from scratch in two weeks using Asterisk
-
-</div>
-<div class="col-2-block">
-<span class="cv-sub">HOBBIES & INTERESTS</span>
-
-Hobbies are DIY, electronics, and weightlifting. Interests are mixed-martial arts, technology, science, philosophy, history, and learning.
-
-</div>
-</div>
-<div class="cv-footer"><hr>This document was automatically generated. The latest version of this document can be downloaded as a PDF from <a href="https://www.mcmk.in/docs/cv/james.mcmeeking.pdf">here</a>.</div>
