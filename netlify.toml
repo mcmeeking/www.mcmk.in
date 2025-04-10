@@ -55,6 +55,7 @@
       style-src 'self' https://fonts.googleapis.com
         'sha256-9HupEqQsOKAA3TMVtaZh8USULhFpwYGuWFk+44sVSgg='
         'sha256-9Ho0iVW22YiA0BIjtsuozF1bT7cakc6QnCGwBkMChz8='
+        'sha256-O+ZuJ6LF8Lxwvl6x6lWZI7wpw0SsSIg9QYcClDLZ9U0='
         https://cdn.jsdelivr.net
         https://*.cloudfront.net;
       object-src 'self';
