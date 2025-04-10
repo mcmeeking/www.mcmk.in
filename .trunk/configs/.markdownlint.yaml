@@ -1,0 +1,4 @@
+# Prettier friendly markdownlint config (all formatting rules disabled)
+extends: markdownlint/style/prettier
+rules:
+  MD033: false  # Allow inline HTML
