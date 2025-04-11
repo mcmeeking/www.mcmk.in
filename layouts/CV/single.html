@@ -196,6 +196,48 @@
     border-bottom: none;
   }
 
+  @media (max-width: 814px) {
+    .page {
+      width: 100%;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-weight: 900;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    .col-1 {
+      margin-top: -0.6cm;
+    }
+
+    .col-2 {
+      margin-top: -0.2cm;
+    }
+
+    hr {
+      margin-top: -0.6em;
+    }
+  }
+
+  @media (max-width: 554px) {
+    .cv-body {
+      flex-direction: column;
+    }
+
+    .col-1, .col-2 {
+      width: 100%;
+    }
+
+    .vl {
+      display: none;
+    }
+  }
+
   @page {
     size: A4;
     margin: 1cm 0.8cm 1.2cm 0.8cm;
@@ -209,7 +251,9 @@
   }
 
   .page {
-    width: 210mm;
+    width: 100%;
+    max-width: 194mm;
+    padding-top: 0px !important;
   }
 
   .contact-logo {

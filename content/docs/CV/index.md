@@ -99,10 +99,14 @@ jobs:
     end: "Aug 2017"
     company: "Jigsaw Systems Ltd"
     title: "Technical Support Advisor"
+    overview: |
+      Member of the 1st line support team handling and resolving issues for B2B and consumer customers.
   - start: "Mar 2014"
     end: "Mar 2015"
     company: "SASIE Ltd"
     title: "Systems Administrator (Windows & Linux)"
+    overview: |
+      Initially hired to maintain the company website, after a month made responsible for all IT systems.
 
 bullet_lists:
   - name: FLUENT IN
@@ -118,6 +122,9 @@ bullet_lists:
       - Ansible, Puppet, Chef
       - CI/CD (GitHub Actions, CircleCI)
       - OpSec/InfoSec
+      - Full Stack Web Development
+      - Service Reliability
+      - Incident Response
       - Compliance (Cyber Essentials)
       - Network Admin and Security
   - name: FAMILIAR WITH
