@@ -3,3 +3,31 @@
 // 覆盖变量
 // ==============================
 
+// Color of the background
+$global-background-color: #fff !default;
+$global-background-color-dark: #292a2d !default;
+
+$primary-color: #028157;
+$link-hover-color: #029453;
+$primary-color-dark: #03ed85;
+$link-hover-color-dark: #fff;
+
+$global-font-secondary-color: #000;
+$global-font-secondary-color-dark: #c0c0c0;
+
+$global-link-hover-color: $link-hover-color;
+$global-link-hover-color-dark: $link-hover-color-dark;
+$single-link-color: $primary-color;
+$single-link-color-dark: $primary-color-dark;
+$single-link-hover-color: $link-hover-color;
+$single-link-hover-color-dark: $link-hover-color-dark;
+$pagination-link-color: $primary-color;
+$pagination-link-color-dark: $primary-color-dark;
+
+
+$code-highlight-color-map: (
+  "c": #4a4a4a,
+  "k": #7a007a,
+  "s": #006400,
+  "m": #8b4513
+);
