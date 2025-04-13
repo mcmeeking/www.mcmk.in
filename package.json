@@ -25,6 +25,7 @@
     "node": ">=22.0.0"
   },
   "dependencies": {
+    "@netlify/plugin-csp-nonce": "^1.5.0",
     "prince": "^1.12.0"
   }
 }

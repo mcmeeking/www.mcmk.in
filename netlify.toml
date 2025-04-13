@@ -35,6 +35,9 @@
     url = "https://cranky-poincare-61f551.netlify.app/docs/cv/"
     fileName = "docs/cv/james.mcmeeking.pdf"
 
+[[plugins]]
+  package = "@netlify/plugin-csp-nonce"
+
 [[headers]]
   for = "/*"
   [headers.values]
@@ -48,7 +51,7 @@
     Permissions-Policy = "geolocation=(), microphone=()"
     Content-Security-Policy = """
       default-src 'none';
-      script-src 'self' 'unsafe-hashes'
+      script-src 'self'
         'sha256-7mK5zXadiHEeXBhAVpt9KHe5ExFkouyy+daBgCVFLWw='
         'sha256-H4gL6rs1biiJMhgVWuw2izT4Gj8VErYfmdfK+7YQov0='
         https://utteranc.es/client.js
