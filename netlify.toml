@@ -48,7 +48,7 @@
     Permissions-Policy = "geolocation=(), microphone=()"
     Content-Security-Policy = """
       default-src 'none';
-      script-src 'self' 'unsafe-inline'
+      script-src 'self' 'strict-dynamic'
         https://utteranc.es/client.js
         https://cdn.jsdelivr.net
         https://*.cloudfront.net;
