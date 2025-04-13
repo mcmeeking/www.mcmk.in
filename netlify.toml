@@ -68,6 +68,8 @@
       media-src 'self';
       report-uri https://mcmeeking.report-uri.com/r/d/csp/enforce;
       worker-src 'self';
+      form-action 'self';
+      frame-ancestors 'self' https://www.mcmk.in https://cranky-poincare-61f551.netlify.app;
     """
 
 # Production context: all deploys from the Production branch set in your site’s
