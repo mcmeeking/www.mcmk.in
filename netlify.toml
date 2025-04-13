@@ -29,7 +29,7 @@
     renderJavaScript = true
 
 [[plugins]]
-  package = "/plugins/netlify-plugin-princexml-pdf"
+  package = "netlify-plugin-princexml-pdf"
 
     [plugins.inputs]
     url = "https://cranky-poincare-61f551.netlify.app/docs/cv/"
