@@ -6,6 +6,7 @@
   "author": "james@mcmk.in",
   "license": "MIT",
   "private": true,
+  "type": "module",
   "dependencies": {
     "prince": "^1.12.0"
   }
