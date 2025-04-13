@@ -17,15 +17,10 @@
     "dev": "hugo server --buildDrafts --buildFuture --disableFastRender"
   },
   "devDependencies": {
-    "netlify-plugin-a11y": "^0.0.12",
-    "netlify-plugin-checklinks": "^4.1.1",
+    "@netlify/plugin-csp-nonce": "^1.5.0",
     "netlify-plugin-princexml-pdf": "^1.0.0"
   },
   "engines": {
     "node": ">=22.0.0"
-  },
-  "dependencies": {
-    "@netlify/plugin-csp-nonce": "^1.5.0",
-    "prince": "^1.12.0"
   }
 }
