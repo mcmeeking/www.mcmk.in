@@ -153,9 +153,9 @@ bullet_lists:
       - A-levels in Physics, Maths, and Chemistry
   - name: ACHIEVEMENTS
     items:
-      - Moved from "IT person" to Service Reliability Engineer and infrastructure architect in 2 years
+      - Designed and built a complex CMS for the UK's leading medical information provider
+      - Moved from "IT person" to solutions architect and infrastructure architect in 2 years
       - Achieved Cyber Essential Plus certification within 6 months of starting a new role
-      - Built a self-hosted website compliant with HIPAA, NIST, and PCI-DSS security standards
       - Personally developed and implemented an employee onboarding workflow for a FTSE 250 company
       - Built a business-grade PBX from scratch in two weeks using Asterisk
 
