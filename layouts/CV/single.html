@@ -1,8 +1,9 @@
 {{- define "content"}}
 <!-- Calculate years of experience -->
-{{ $career_start := 2014 }} <!-- Matches your career start from "Mar 2014" -->
+{{ $career_start := 2014 }}
+{{ $expertise_start := 2018 }}
 {{ $current_year := now.Year }}
-{{ $years_since := sub $current_year $career_start }}
+{{ $years_since := sub $current_year $expertise_start }}
 {{ $abstract := .Params.abstract }}
 {{ $abstract := replace $abstract "{{ years_since }}" (print $years_since) }}
 
