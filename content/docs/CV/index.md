@@ -5,26 +5,21 @@ draft: false
 author: JAMES McMEEKING
 authorLink: ""
 description: ""
-
 tags: []
 categories:
   - Documentation
-
 hiddenFromHomePage: false
 hiddenFromSearch: true
-
 featuredImage: ""
 featuredImagePreview: ""
-
 toc:
   enable: false
 math:
   enable: false
 lightgallery: false
 license: ""
-
 abstract: |
-  Loves learning new things, and is passionate about technology and the open-source philosophy in particular. Has been working in the industry for over {{ years_since }} years and in that time has developed from an apprentice to a systems engineer (and technical problem-solver) for the UK's largest medico-legal information provider. Primarily enjoys the fast-pace and challenge that the IT industry brings, but is also driven by a desire to improve the world through technology and make a positive difference to peoples’ lives.
+  Experienced tech professional with over {{years_since}} years of technical solutions expertise, designing and implementing complex multi-region cloud-based systems, primarily on AWS, for use in secure environments. Fluent in Infrastructure as Code, development pipelines, serverless and resilient architectures, and automation with experience delivering secure and compliant systems in regulated environments. Primarily enjoys the fast-pace and challenge that the tech industry brings, but is also driven by a desire to improve the world through technology and make a positive difference to peoples’ lives.
 
 # Contact information
 contact:
@@ -56,57 +51,56 @@ jobs:
     company: "EIDO Healthcare Ltd"
     title: "IT Engineer"
     overview: |
-      Administration, architecture, development, deployment, and maintenance/support of both internal and customer-facing systems. Design and implementation of automated testing and deployment workflows of infrastructure and applications deployed to AWS using enterprise-grade tooling (Terraform, CircleCI/Github Actions, Kubernetes/ECS). Maintained oversight and management of internal endpoints as a secondary role, but shifted focus towards devops/platform engineering day to day.
+      Functioned as the primary solutions architect for both internal and customer-facing systems, leading the system design, deployment, and maintenance of cloud-based systems on AWS. Spearheaded the development of automated workflows using Terraform, CircleCI/GitHub Actions, and AWS services, transitioning focus to DevOps and platform engineering while ensuring system reliability and compliance.
     responsibilities:
-      - Architect, deploy, and maintain internal and customer-facing infrastructure (hosted in AWS) using Terraform
-      - Ensure service reliability for all systems and applications
-      - Design and implement CI/CD workflows to ensure rapid and reliable deployment of applications and systems
-      - Retain previous responsibilities of IT Administrator, including incident response, compliance monitoring, and uptime assurance
+      - Design, deploy, and maintain resilient global systems using Terraform and AWS service including EC2, ECS, S3, RDS, Lambda, and others
+      - Implemented CI/CD pipelines to streamline application and system development and deployment
+      - Enhanced security and compliance for systems for use in healthcare institutions, adhering to Cyber Essentials Plus standards
+      - Retained oversight of IT operations, including incident response and endpoint management
   - start: "Sep 2020"
     end: "Apr 2023"
     company: "EIDO Healthcare Ltd"
     title: "IT Administrator"
     overview: |
-      Oversight and handling of day-to-day IT operations, along with compliance monitoring, uptime assurance, and incident response. Providing support to both internal staff and stakeholders at healthcare organisations from all over the globe, including the NHS, BMI Healthcare, SEHA, and others.
+      Evolved role from IT generalist into solutions architecture and devops engineering, designing and executing cloud migration strategies to AWS for various internal systems. Managed daily IT operations, ensuring uptime, security, and compliance while supporting stakeholders with complex technical requirements.
     responsibilities:
-      - Ensure all internal services and endpoints are compliant with security policies and frameworks
-      - Manage various cloud-hosted services and infrastructure to ensure 99.9% uptime of services
-      - Provide detailed documentation internally and externally
-      - Develop policies and procedures to ensure IT best-practices are in place at all times
+      - Planned and implemented AWS migrations, utilising VPCs, RDS, and security best practices
+      - Managed cloud-hosted infrastructure to achieve 99.9% uptime for critical services
+      - Developed automation scripts (Python, Bash) to optimise system administration
+      - Created documentation and policies to enforce IT best practices and compliance
   - start: "Jul 2018"
     end: "Jul 2020"
     company: "Jigsaw Systems Ltd"
     title: "Professional Services Engineer"
     overview: |
-      Site work; primarily project work with some support. Installing and configuring hardware and applications for customers of Jigsaw24, and providing technical advice and assistance for both external and internal jobs. Work with a _vast_ array of technologies including Ubuntu, CentOS, macOS, Windows Server, Azure, AWS, Jamf, Intune, Cisco, Sonicwall, and more. Regularly develop admin and management workflows for mid-sized estates (500-2,000 client machines), and often work with large (2,000-10,000+ client) sites.
+      Delivered technical solutions for clients, including architecture design, implementation, and support across an extremely diverse range of technologies. Handled project scoping, design, and delivery to ensure solutions met individual customer needs from SME to mid and large-scale environments.
     responsibilities:
-      - Install, support, and configure servers, workstations, NAS arrays, mobile devices, etc.
-      - Technical design and scoping of upcoming projects, and liaising with customers
-      - Compiling documentation on installations and upgrades for use by the service desk
-      - Developing automation workflows for onboarding, configuration, management/monitoring, and general admin
+      - Configured and deployed servers, endpoints, and cloud services
+      - Designed technical solutions and automation workflows for client projects
+      - Provided documentation and support for service desk operations
+      - Advised clients on infrastructure and application deployments
   - start: "Aug 2017"
     end: "Jul 2018"
     company: "Jigsaw Systems Ltd"
     title: "Technical Support Supervisor"
     overview: |
-      Lead member of the 1st line support team providing technical oversight and an escalation point to team members. Provided support for the entire range of Jigsaw24's product catalogue, ranging from iPhones/iPads, to pro-audio solutions from AVID, pro-video solutions from BlackMagic, and networking, attached storage, and client machines for SMB's, enterprise, and consumer customers alike.
+      Led 1st line support team, providing technical oversight and designing workflows to enhance support efficiency across a broad product range, including networking and storage solutions.
     responsibilities:
-      - Training and documentation development
-      - Workflow design, optimisation, and deployment through company CRM Salesforce
-      - Direct escalation point for complex, or high-priority issues
-      - Escalation point for troubleshooting of hardware/software issues
+      - Developed training materials and optimised workflows via Salesforce CRM
+      - Served as escalation point for complex technical issues
+      - Supported hardware/software troubleshooting for enterprise clients
   - start: "Apr 2015"
     end: "Aug 2017"
     company: "Jigsaw Systems Ltd"
     title: "Technical Support Advisor"
     overview: |
-      Member of the 1st line support team handling and resolving issues for B2B and consumer customers.
+      Provided 1st line technical support, resolving issues for B2B and consumer clients across various technologies.
   - start: "Mar 2014"
     end: "Mar 2015"
     company: "SASIE Ltd"
     title: "Systems Administrator (Windows & Linux)"
     overview: |
-      Initially hired to maintain the company website, after a month made responsible for all IT systems.
+      Managed all IT systems, including website maintenance and infrastructure administration, for Windows and Linux environments.
 
 bullet_lists:
   - name: FLUENT IN
