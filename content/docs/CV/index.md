@@ -19,7 +19,7 @@ math:
 lightgallery: false
 license: ""
 abstract: |
-  Experienced tech professional with over {{years_since}} years of technical solutions expertise, designing and implementing complex multi-region cloud-based systems, primarily on AWS, for use in secure environments. Fluent in Infrastructure as Code, development pipelines, serverless and resilient architectures, and automation with experience delivering secure and compliant systems in regulated environments. Primarily enjoys the fast-pace and challenge that the tech industry brings, but is also driven by a desire to improve the world through technology and make a positive difference to peoples’ lives.
+  Experienced tech professional with over {{ years_since }} years of technical solutions expertise, designing and implementing complex multi-region cloud-based systems, primarily on AWS, for use in secure environments. Fluent in Infrastructure as Code, development pipelines, serverless and resilient architectures, and automation with experience delivering secure and compliant systems in regulated environments. Primarily enjoys the fast-pace and challenge that the tech industry brings, but is also driven by a desire to improve the world through technology and make a positive difference to peoples’ lives.
 
 # Contact information
 contact:
