@@ -17,7 +17,7 @@
     "dev": "hugo server --buildDrafts --buildFuture --disableFastRender"
   },
   "devDependencies": {
-    "@netlify/plugin-csp-nonce": "^1.5.0",
+    "@netlify/plugin-csp-nonce": "^1.5.2",
     "netlify-plugin-princexml-pdf": "^1.0.0"
   },
   "engines": {
