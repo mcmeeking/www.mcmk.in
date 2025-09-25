@@ -107,13 +107,12 @@ bullet_lists:
     items:
       - Scripting (Python, Bash, ZSH)
       - Terraform
-      - Containerisation (Docker, k8s)
+      - Containerisation (Docker, ECS)
       - Git & GitHub/GitLab
       - Linux & macOS Sysadmin
       - AWS & O365 Admin
       - Virtualisation concepts
-      - Config Management
-      - Ansible, Puppet, Chef
+      - Config Management (Ansible)
       - CI/CD (GitHub Actions, CircleCI)
       - OpSec/InfoSec
       - Full Stack Web Development
@@ -124,6 +123,7 @@ bullet_lists:
   - name: FAMILIAR WITH
     items:
       - AI/ML Concepts
+      - Kubernetes
       - Azure/GCP Admin
       - VMware, HyperV, KVM
       - Jamf/Intune/MDM Admin
