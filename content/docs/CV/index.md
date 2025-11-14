@@ -106,7 +106,9 @@ bullet_lists:
   - name: FLUENT IN
     items:
       - Scripting (Python, Bash, ZSH)
+      - API design and integration
       - Terraform
+      - NodeJS, React, Vue
       - Containerisation (Docker, ECS)
       - Git & GitHub/GitLab
       - Linux & macOS Sysadmin
@@ -115,21 +117,19 @@ bullet_lists:
       - Config Management (Ansible)
       - CI/CD (GitHub Actions, CircleCI)
       - OpSec/InfoSec
-      - Full Stack Web Development
+      - Full Stack Development
       - Service Reliability
       - Incident Response
-      - Compliance (Cyber Essentials)
+      - Compliance (Cyber Essentials +)
       - Network Admin and Security
   - name: FAMILIAR WITH
     items:
       - AI/ML Concepts
-      - Kubernetes
       - Azure/GCP Admin
       - VMware, HyperV, KVM
       - Jamf/Intune/MDM Admin
       - NoSQL Databases
       - PostgreSQL, MySQL, SQLite
-      - NodeJS, React, Vue
       - Modern languages (Go, Rust)
   - name: INTERESTED IN
     items:
@@ -153,8 +153,8 @@ bullet_lists:
       - A-levels in Physics, Maths, and Chemistry
   - name: ACHIEVEMENTS
     items:
-      - Designed and built a complex CMS for the UK's leading medical information provider
-      - Moved from "IT person" to solutions architect and infrastructure architect in 2 years
+      - Designed and built a complex Python-based CMS for the UK's leading medical information provider
+      - Moved from "IT person" to solutions architect, full-stack developer, and infrastructure architect in 2 years
       - Achieved Cyber Essential Plus certification within 6 months of starting a new role
       - Personally developed and implemented an employee onboarding workflow for a FTSE 250 company
       - Built a business-grade PBX from scratch in two weeks using Asterisk
