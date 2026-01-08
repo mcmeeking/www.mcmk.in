@@ -53,7 +53,7 @@ jobs:
     overview: |
       Functioned as the primary solutions architect for both internal and customer-facing systems, leading the system design, development, deployment, and maintenance of cloud-based systems on AWS. Spearheaded the development of automated workflows using Terraform, CircleCI/GitHub Actions, and AWS services, transitioning focus to DevOps and platform engineering while ensuring system reliability and compliance.
     responsibilities:
-      - Build and maintain full-stack (React and Django) applications for a global user base in healthcare
+      - Build and maintain full-stack (Python/NodeJS) applications for a global user base
       - Design, deploy, and maintain resilient global systems using Terraform and AWS service including EC2, ECS, S3, RDS, Lambda, and others
       - Implemented CI/CD pipelines to streamline application and system development and deployment
       - Retained oversight of IT operations, including incident response and endpoint management
