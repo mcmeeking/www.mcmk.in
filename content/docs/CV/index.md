@@ -51,8 +51,9 @@ jobs:
     company: "EIDO Healthcare Ltd"
     title: "IT Engineer"
     overview: |
-      Functioned as the primary solutions architect for both internal and customer-facing systems, leading the system design, deployment, and maintenance of cloud-based systems on AWS. Spearheaded the development of automated workflows using Terraform, CircleCI/GitHub Actions, and AWS services, transitioning focus to DevOps and platform engineering while ensuring system reliability and compliance.
+      Functioned as the primary solutions architect for both internal and customer-facing systems, leading the system design, development, deployment, and maintenance of cloud-based systems on AWS. Spearheaded the development of automated workflows using Terraform, CircleCI/GitHub Actions, and AWS services, transitioning focus to DevOps and platform engineering while ensuring system reliability and compliance.
     responsibilities:
+      - Build and maintain full-stack (React and Django) applications for a global user base in healthcare
       - Design, deploy, and maintain resilient global systems using Terraform and AWS service including EC2, ECS, S3, RDS, Lambda, and others
       - Implemented CI/CD pipelines to streamline application and system development and deployment
       - Enhanced security and compliance for systems for use in healthcare institutions, adhering to Cyber Essentials Plus standards
@@ -105,10 +106,10 @@ jobs:
 bullet_lists:
   - name: FLUENT IN
     items:
-      - Scripting (Python, Bash, ZSH)
-      - API design and integration
-      - Terraform
+      - Python, Bash, ZSH
       - NodeJS, React, Vue
+      - Multi-region app design
+      - Terraform
       - Containerisation (Docker, ECS)
       - Git & GitHub/GitLab
       - Linux & macOS Sysadmin
@@ -125,7 +126,7 @@ bullet_lists:
   - name: FAMILIAR WITH
     items:
       - AI/ML Concepts
-      - Azure/GCP Admin
+      - Azure Admin
       - VMware, HyperV, KVM
       - Jamf/Intune/MDM Admin
       - NoSQL Databases
