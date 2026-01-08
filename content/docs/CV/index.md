@@ -56,7 +56,6 @@ jobs:
       - Build and maintain full-stack (React and Django) applications for a global user base in healthcare
       - Design, deploy, and maintain resilient global systems using Terraform and AWS service including EC2, ECS, S3, RDS, Lambda, and others
       - Implemented CI/CD pipelines to streamline application and system development and deployment
-      - Enhanced security and compliance for systems for use in healthcare institutions, adhering to Cyber Essentials Plus standards
       - Retained oversight of IT operations, including incident response and endpoint management
   - start: "Sep 2020"
     end: "Apr 2023"
