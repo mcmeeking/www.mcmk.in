@@ -51,9 +51,9 @@ jobs:
     company: "EIDO Healthcare Ltd"
     title: "IT Engineer"
     overview: |
-      Functioned as the primary solutions architect for both internal and customer-facing systems, leading the system design, development, deployment, and maintenance of cloud-based systems on AWS. Spearheaded the development of automated workflows using Terraform, CircleCI/GitHub Actions, and AWS services, transitioning focus to DevOps and platform engineering while ensuring system reliability and compliance.
+      Primary solutions architect for internal and customer-facing systems. Responsible for designing, developing, deploying, and maintaining global full-stack (Python & Node) applications and AWS infrastructure to support EIDO's significant user base as well as overseeing internal IT operations.
     responsibilities:
-      - Build and maintain full-stack (Python/Node) applications for a global user-base
+      - Build and maintain full-stack applications for a global user-base
       - Design, deploy, and maintain AWS infrastructure using Terraform and Ansible
       - Implement and maintain CI/CD pipelines for app development and deployment
       - Retained oversight of IT operations, including incident response and endpoint management
@@ -62,7 +62,7 @@ jobs:
     company: "EIDO Healthcare Ltd"
     title: "IT Administrator"
     overview: |
-      Evolved role from IT generalist into solutions architecture and devops engineering, designing and executing cloud migration strategies to AWS for various internal systems. Managed daily IT operations, ensuring uptime, security, and compliance while supporting stakeholders with complex technical requirements.
+      Evolved role from IT generalist into solutions/infra architect and devops engineer, designing and implementing cloud migration strategies to AWS for various internal systems. Managed daily IT operations, ensuring uptime, security, and CE+ compliance across all company systems.
     responsibilities:
       - Planned and implemented AWS migrations, utilising VPCs, RDS, and security best practices
       - Managed cloud-hosted infrastructure to achieve 99.9% uptime for critical services
